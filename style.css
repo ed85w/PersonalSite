@@ -1,0 +1,198 @@
+.test {
+  border: 1px solid red;
+}
+
+/*whole of page settings*/
+
+body {
+  margin: 0;
+  font-family: 'Mukta Malar', sans-serif;
+  font-weight: bold;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.row {
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+  padding-top: 30px;
+}
+
+/*end of whole of page settings*/
+
+/*navbar*/
+
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+  margin-bottom: 0;
+  border-radius: 0;
+
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+#navbar-container {
+  background-color: black;
+}
+
+.navbar-nav li a {
+  padding: 25px 15px 25px 15px;
+}
+
+.navbar-header {
+  height: 50px;
+  background-color: black;
+
+}
+
+/*navbar button on mobile*/
+
+button.navbar-toggle,
+button.navbar-toggle.collapsed {
+  float: none;
+  margin: 0;
+  padding-top: 15px;
+}
+
+span.icon-bar {
+  background-color: white;
+}
+
+/*home page*/
+
+
+#home {
+  background-image: url(img/background2.jpeg);
+  width: 100%;
+  height: 100vh;
+  margin-top: 70px;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#home h1 {
+  font-size: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  color: #6083a7;
+  position: relative;
+  top:30%;
+  transform: translate(0, -50%);
+}
+
+/*about*/
+
+#about {
+  background-color: grey;
+}
+
+.skills-grid {
+  padding-bottom: 5px;
+}
+
+.tech-div {
+  padding: 5px 0 0 0;
+  /*border:2px solid white;*/
+}
+
+.tech-icon-div {
+  padding: 0 5px;  
+}
+
+.tech-text-div {
+  height: 53px;
+  padding: 0 5px;
+  text-align: left;
+}
+
+.tech-div h3 {
+  font-size: 16px;
+  margin: 0;
+  position: relative;
+  top:48%;
+  transform: translate(0, -50%);
+}
+
+.devicon {
+  font-size:  50px;
+}
+
+/*contact*/
+
+#contact {
+  height: 600px;
+  padding: 0;
+  background-color: green;
+}
+
+
+/*portfolio*/
+
+#project1 {
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+.project {
+  height: 600px;
+  width: 100%;
+}
+
+.portfolio-img {
+  max-width: 100%;
+  max-height: 450px;
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+/*// css specific properties col-sm-**/
+
+h2 {
+  font-size: 20px;
+}
+
+
+.tech-text-div {
+  text-align: center;
+}
+
+}
+
+
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+/*// css specific properties col-xs-**/
+
+/*home page*/
+
+#home {
+  margin-top: 50px;
+}
+
+/*about page*/
+
+.tech-text-div {
+  height: 20px;
+  text-align: center;
+}
+
+.tech-div h3 {
+  font-size: 10px;
+}
+
+}
