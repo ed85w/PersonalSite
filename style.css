@@ -20,13 +20,12 @@ body {
 
 h2 {
   margin-top: 0;
-  padding-top: 30px;
+  padding:  30px 0;
 }
 
 /*end of whole of page settings*/
 
 /*navbar*/
-
 
 .navbar .navbar-nav {
   display: inline-block;
@@ -46,6 +45,7 @@ h2 {
 }
 
 .navbar-nav li a {
+  color: white;
   padding: 25px 15px 25px 15px;
 }
 
@@ -70,9 +70,8 @@ span.icon-bar {
 
 /*home page*/
 
-
 #home {
-  background-image: url(img/background2.jpeg);
+  background-image: url(img/space.jpeg);
   width: 100%;
   height: 100vh;
   margin-top: 70px;
@@ -85,8 +84,7 @@ span.icon-bar {
 
 #home h1 {
   font-size: 50px;
-  font-family: 'Ubuntu', sans-serif;
-  color: #6083a7;
+  color: white;
   position: relative;
   top:30%;
   transform: translate(0, -50%);
@@ -95,16 +93,33 @@ span.icon-bar {
 /*about*/
 
 #about {
-  background-color: grey;
+  height: 250px;
+  background-color: #102633;
+  /*background-color: #010a10;*/
+  position: relative;
+  color: white;
+
 }
 
+#about p {
+  position: absolute;
+  top:60%;
+  transform: translate(0, -50%);
+  padding-right: 250px;
+  padding-left: 250px;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+
+/*skills*/
+
 .skills-grid {
-  padding-bottom: 5px;
+  padding-bottom: 30px;
 }
 
 .tech-div {
   padding: 5px 0 0 0;
-  /*border:2px solid white;*/
 }
 
 .tech-icon-div {
@@ -125,9 +140,99 @@ span.icon-bar {
   transform: translate(0, -50%);
 }
 
+/*tech icons*/
 .devicon {
   font-size:  50px;
 }
+
+
+/*portfolio*/
+
+#project1,
+#project2 {
+    -ms-transform: scale(0); /* IE 9 */
+    -webkit-transform: scale(0); /* Safari */
+    transform: scale(0);
+    transition: all 1s ease-in-out;
+}
+
+#project3 {
+  position: relative;
+}
+
+#project1::after {
+  content: "";
+  background: url(img/wood.jpeg);
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#project2::after {
+  content: "";
+  background: url(img/flowers.jpeg);
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+#project3::after {
+  content: "";
+  background: url(img/grass1.jpeg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+
+.project {
+  height: 550px;
+  width: 100%;
+  padding: 30px 20px;
+}
+
+
+.project-text h2 {
+  padding-top: 150px;
+  color: #102633;
+}
+
+.project-text h5 {
+
+}
+
+.portfolio-img {
+  max-width: 100%;
+  max-height: 450px;
+}
+
 
 /*contact*/
 
@@ -137,24 +242,9 @@ span.icon-bar {
   background-color: green;
 }
 
-
-/*portfolio*/
-
-#project1 {
-    -ms-transform: scale(0); /* IE 9 */
-    -webkit-transform: scale(0); /* Safari */
-    transform: scale(0);
-    transition: all 1s ease-in-out;
-}
-
-.project {
-  height: 600px;
-  width: 100%;
-}
-
-.portfolio-img {
-  max-width: 100%;
-  max-height: 450px;
+/*contact icons*/
+i.fa {
+  font-size:  50px;
 }
 
 /* Portrait tablets and small desktops */
@@ -165,9 +255,23 @@ h2 {
   font-size: 20px;
 }
 
+/*about*/
+
+#about p {
+  padding: 0 100px 40px 100px;
+}
 
 .tech-text-div {
   text-align: center;
+}
+
+/*portfolio */
+.project {
+  height: 400px;
+}
+
+.project-text h2 {
+  padding-top: 100px;
 }
 
 }
@@ -186,6 +290,11 @@ h2 {
 
 /*about page*/
 
+#about p {
+  padding: 0 50px 40px 50px;
+  font-size: 12px;
+}
+
 .tech-text-div {
   height: 20px;
   text-align: center;
@@ -193,6 +302,16 @@ h2 {
 
 .tech-div h3 {
   font-size: 10px;
+}
+
+/*portfolio*/
+
+.project {
+  height: 550px;
+}
+
+.project-text h2 {
+  padding-top: 75px;
 }
 
 }

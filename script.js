@@ -1,12 +1,14 @@
 // Scale effect on scroll to portfolio
 $(window).on('scroll', function() {
-	var StartPOS = $('#contact').position().top;
+	var StartPOS = $('#about').position().top;
 	var scrollPOS = $(this).scrollTop();
 
 	if (scrollPOS >= StartPOS) {
 		$('#project1').css('transform', 'scale(1)')
+		$('#project2').css('transform', 'scale(1)')
 	} else {
 		$('#project1').css('transform', 'scale(0)')
+		$('#project2').css('transform', 'scale(0)')
 	}
 });
 

@@ -19,6 +19,9 @@
 
 </head>
 <body>
+  
+  <!-- navbar -->
+
   <div class="container-fluid" >
     <nav class="navbar navbar-fixed-top">
       <div class="container-fluid text-center" id="navbar-container">
@@ -35,8 +38,8 @@
           <ul class="nav navbar-nav">
               <li><a href="#home">HOME</a></li>
               <li><a href="#about">ABOUT ME</a></li>
+              <li><a href="#portfolio-div">PORTFOLIO</a></li>              
               <li><a href="#contact">CONTACT</a></li>
-              <li><a href="#portfolio-div">PORTFOLIO</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
@@ -44,30 +47,31 @@
   </div>
 
 
+  <!-- home page -->
+
   <div class="container-fluid">
 		<div class="col-md-12 text-center" id="home">
+      <h1>ED WALKER</h1>
       <h1>FULL STACK WEB DEVELOPER</h1>
     </div>
   </div>
 
-  <!-- ABOUT ME DIV -->
+  <!-- about div -->
   <div class="container-fluid">
 
-    <div class="row">
-
-      <div class="col-md-12 text-center" id="about">
-        <h2>ABOUT ME</h2>
-        <p>I am a highly motivated, dedicated and ambitious full stack developer with experience in both front-end and back-end technologies. Recently, I completed a diploma in software engineering, achieving merit and I am keen to continue learning new skills as well developing existing ones.</p>
-      </div>
-    
+    <div class="col-md-12 text-center" id="about">
+      <h2>ABOUT ME</h2>
+      <p>I am a highly motivated, dedicated and ambitious full stack developer with experience in both front-end and back-end technologies. Recently, I completed a diploma in software engineering, achieving merit, and I am keen to continue learning new skills as well developing existing ones. As a result of my previous employment I have experience of creating and maintaining a variety of software systems.</p>
     </div>
 
-    <div class="row">
+  </div>
 
+  <!-- key skills div -->
+  <div class="container-fluid">
+    <div class="row">
       <div class="col-md-12 text-center">
         <h2>MY KEY SKILLS</h2>
       </div>
-
     </div>
 
     <div class="row skills-grid">
@@ -218,63 +222,85 @@
     </div>
   </div>
 
+  <div class="clearfix"></div>
 
+  <!-- portfolio -->
 
+  <div class="container-fluid text-center portfolio" id="portfolio-div">
 
-
-  <div class="col-md-12 text-center" id="contact">
-    <h2>CONTACT</h2>
-    <div class="col-md-6 col-md-offset-3 test">
-      <div class="col-md-3 test">
-        <i class="fa fa-envelope-o" aria-hidden="true"></i>
-      </div>  
-      <div class="col-md-9 tech-text-div test">
-        <h3>EMAIL</h3>
-      </div>  
+    <!-- project 1 -->
+    <div class="row">
+      <div class="project" id="project1">
+        <div class=" col-sm-7 col-md-7 ">
+          <img src="img/project1.png" class="portfolio-img">
+        </div>          
+        <div class="col-sm-5 col-md-5 project-text">
+          <a href="https://ed85w.github.io/Stream1Project/" target="_blank"><h2>Reggae Cover Band Website</h2></a>
+          <h5>A website for a fictional cover band. Created in Angular.js</h5>
+        </div>
+      </div>
     </div>
-    <div class="col-md-6 col-md-offset-3 test">
-      <div class="col-md-3 test">
-        <i class="devicon-github-plain devicon"></i>
-      </div>  
-      <div class="col-md-9 tech-text-div test">
-        <h3>GITHUB</h3>
-      </div>  
+
+    <!-- project 2 -->
+    <div class="row">
+      <div class="project" id="project2">
+        <div class="col-sm-5 col-md-5 project-text">        
+          <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank"><h2>Wedding Stationery Shop</h2></a>
+          <h5>A simple shop application with basket and Stripe payment function. Created in Django. Hosted on Heroku and AWS</h5>
+        </div>
+        <div class="col-sm-7 col-md-7">
+          <img src="img/project2.png" class="portfolio-img">
+        </div> 
+
+      </div>
     </div>
-    <div class="col-md-6 col-md-offset-3 test">
-      <div class="col-md-3 test">
-        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-      </div>  
-      <div class="col-md-9 tech-text-div test">
-        <h3>LINKEDIN</h3>
-      </div>  
+
+    <!-- project 3 -->
+    <div class="row">
+      <div class="project" id="project3">
+        <div class="col-sm-7 col-md-7">
+          <img src="img/project3.png" class="portfolio-img">
+        </div>
+        <div class="col-sm-5 col-md-5 project-text">  
+          <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank"><h2>Premier League Statistics Site</h2></a>
+          <h5>An interactive statistics page. Created in Flask and using D3.js, DC.js & Crossfilter</h5>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="clearfix"></div>
 
-  <div class="container-fluid text-center portfolio" id="portfolio-div">
-    <div class="project test" id="project1">
-        <a href="#"><h2>Reggae Cover Band Website</h2></a>
-        <h5>A website for a fictional cover band. Created in Angular.js</h5>
-        <div class="col-md-12">
-          <img src="img/project1.png" class="portfolio-img">
-        </div>
+
+  <!-- contact -->
+
+  <div class="col-md-12 text-center" id="contact">
+    <h2>CONTACT</h2>
+    <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 test">
+
+      <div class="col-xs-3 col-sm-3 col-md-3 tech-div">
+        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+      </div>  
+      <div class="col-md-9 tech-text-div">
+        <h3>ed.walker@hotmail.co.uk</h3>
+      </div>  
     </div>
 
-    <div class="project" id="project2">
-        <h2>Wedding Stationery Shop</h2>
-        <h5>A simple shop application with basket and Stripe payment function. Created in Django</h5>
-        <div class="col-md-12">
-          <img src="img/project2.png" class="portfolio-img">
-        </div>
+    <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 test">
+      <div class="col-xs-3 col-sm-3 col-md-3 tech-div">
+          <i class="devicon-github-plain devicon"></i>
+      </div>  
+      <div class="col-md-9 tech-text-div">
+          <h3>https://github.com/ed85w</h3>
+      </div>  
     </div>
 
-    <div class="project" id="project3">
-        <h2>Premier League Statistics Site</h2>
-        <h5>An interactive statistics page. Created in Flask and using D3.js, DC.js & Crossfilter</h5>
-        <div class="col-md-12">
-          <img src="img/project3.png" class="portfolio-img">
-        </div>
+    <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 test">
+      <div class="col-xs-3 col-sm-3 col-md-3 tech-div">
+        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+      </div>  
+      <div class="col-md-9 tech-text-div">
+          <h3>linkedin</h3>
+      </div>  
     </div>
   </div>
 
