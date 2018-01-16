@@ -18,12 +18,12 @@
 
 
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-nav" data-offset="75">
   
   <!-- navbar -->
 
   <div class="container-fluid" >
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top" id=main-nav>
       <div class="container-fluid text-center" id="navbar-container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -38,7 +38,7 @@
           <ul class="nav navbar-nav">
               <li><a href="#home">HOME</a></li>
               <li><a href="#about">ABOUT ME</a></li>
-              <li><a href="#portfolio-div">PORTFOLIO</a></li>              
+              <li><a href="#portfolio">PORTFOLIO</a></li>              
               <li><a href="#contact">CONTACT</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -226,32 +226,31 @@
 
   <!-- portfolio -->
 
-  <div class="container-fluid text-center portfolio" id="portfolio-div">
+  <div class="container-fluid text-center" id="portfolio">
 
     <!-- project 1 -->
     <div class="row">
       <div class="project" id="project1">
         <div class=" col-sm-7 col-md-7 ">
           <img src="img/project1.png" class="portfolio-img">
-        </div>          
+        </div>  
         <div class="col-sm-5 col-md-5 project-text">
           <a href="https://ed85w.github.io/Stream1Project/" target="_blank"><h2>Reggae Cover Band Website</h2></a>
           <h5>A website for a fictional cover band. Created in Angular.js</h5>
-        </div>
+        </div>        
       </div>
     </div>
 
     <!-- project 2 -->
     <div class="row">
       <div class="project" id="project2">
-        <div class="col-sm-5 col-md-5 project-text">        
+        <div class="col-sm-7 col-md-7 col-md-push-5">
+          <img src="img/project2.png" class="portfolio-img">
+        </div> 
+        <div class="col-sm-5 col-md-5 col-md-pull-7 project-text">        
           <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank"><h2>Wedding Stationery Shop</h2></a>
           <h5>A simple shop application with basket and Stripe payment function. Created in Django. Hosted on Heroku and AWS</h5>
         </div>
-        <div class="col-sm-7 col-md-7">
-          <img src="img/project2.png" class="portfolio-img">
-        </div> 
-
       </div>
     </div>
 

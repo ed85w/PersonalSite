@@ -1,15 +1,18 @@
-// Scale effect on scroll to portfolio
+
 $(window).on('scroll', function() {
+
+	// Scale effect on scroll to portfolio
 	var StartPOS = $('#about').position().top;
 	var scrollPOS = $(this).scrollTop();
 
 	if (scrollPOS >= StartPOS) {
-		$('#project1').css('transform', 'scale(1)')
-		$('#project2').css('transform', 'scale(1)')
+		$('#project1').css('transform', 'scale(1) translate3d(0,0,0)')
+		$('#project2').css('transform', 'scale(1) translate3d(0,0,0)')
 	} else {
-		$('#project1').css('transform', 'scale(0)')
-		$('#project2').css('transform', 'scale(0)')
+		$('#project1').css('transform', 'scale(0) translate3d(0,0,0)')
+		$('#project2').css('transform', 'scale(0) translate3d(0,0,0)')
 	}
+
 });
 
 
@@ -40,6 +43,7 @@ $(document).ready(function(){
 		}, 800);
 
 		} // End if
+
 });
 
 
@@ -48,9 +52,7 @@ $(document).on('click','.navbar-collapse.in',function(e) {
 		if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
     		$(this).collapse('hide').delay(180);
 		}
-});
-
-
+	});
 
 });
 

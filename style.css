@@ -7,7 +7,7 @@
 body {
   margin: 0;
   font-family: 'Mukta Malar', sans-serif;
-  font-weight: bold;
+  position: relative;
 }
 
 .container-fluid {
@@ -41,7 +41,8 @@ h2 {
 }
 
 #navbar-container {
-  background-color: black;
+  background-color: #020f16;
+
 }
 
 .navbar-nav li a {
@@ -49,9 +50,19 @@ h2 {
   padding: 25px 15px 25px 15px;
 }
 
+
+/*active nav item */
+.navbar-nav li a:hover,
+li.active a {
+  background-color: transparent;
+  color: red;
+  font-weight: bold;
+}
+
 .navbar-header {
   height: 50px;
-  background-color: black;
+  /*background-color: #102633;*/
+
 
 }
 
@@ -98,7 +109,6 @@ span.icon-bar {
   /*background-color: #010a10;*/
   position: relative;
   color: white;
-
 }
 
 #about p {
@@ -282,17 +292,29 @@ h2 {
 @media (max-width: 767px) {
 /*// css specific properties col-xs-**/
 
+h2 {
+  padding:  20px 0;
+}
+
 /*home page*/
 
 #home {
   margin-top: 50px;
 }
 
+#home h1 {
+  font-size: 40px;
+  color: white;
+  position: relative;
+  top:30%;
+  transform: translate(0, -50%);
+}
+
 /*about page*/
 
 #about p {
   padding: 0 50px 40px 50px;
-  font-size: 12px;
+  font-size: 11px;
 }
 
 .tech-text-div {
@@ -301,7 +323,7 @@ h2 {
 }
 
 .tech-div h3 {
-  font-size: 10px;
+  font-size: 11px;
 }
 
 /*portfolio*/
