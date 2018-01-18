@@ -21,40 +21,67 @@ $(document).ready(function(){
 	// Add smooth scrolling to all links
 	$("a").on('click', function(event) {
 
-	// Make sure this.hash has a value before overriding default behavior
-	if (this.hash !== "") {
-		// Prevent default anchor click behavior
-		// event.preventDefault();
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+			// Prevent default anchor click behavior
+			// event.preventDefault();
+			// Store hash
+			var hash = this.hash;
 
-		// Store hash
-		var hash = this.hash;
+			// Get height of navbar(mob or screen)
+			if ($('#navbar1').height() == 70) {
+				var navHeight = 70;
+			} else {
+				var navHeight = 50;
+			}
 
-		// Get height of navbar(mob or screen)
-		if ($('#navbar1').height() == 70) {
-			var navHeight = 70;
-		} else {
-			var navHeight = 50;
-		}
-
-		// Using jQuery's animate() method to add smooth page scroll
-		// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-		$('html, body').animate({
-			scrollTop: $(hash).offset().top-navHeight
-		}, 800);
+			// Using jQuery's animate() method to add smooth page scroll
+			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top-navHeight
+			}, 800);
 
 		} // End if
 
-});
+	});
 
 
-// collapse navbar after selection on mob
-$(document).on('click','.navbar-collapse.in',function(e) {
+	// collapse navbar after selection on mob
+	$(document).on('click','.navbar-collapse.in',function(e) {
 		if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
     		$(this).collapse('hide').delay(180);
 		}
 	});
 
-});
+	// email js code
+	var myform = $("form#myform");
+	myform.submit(function(event){
+		event.preventDefault();
+
+		var params = myform.serializeArray().reduce(function(obj, item) {
+     	obj[item.name] = item.value;
+     	return obj;
+  	}, {});
+
+	  // Change to your service ID, or keep using the default service
+  	var service_id = "default_service";
+  	var template_id = "template_VTGznICV";
+  	myform.find("button").text("Sending...");
+  	emailjs.send(service_id,template_id,params)
+	  	.then(function(){ 
+			alert("Message Sent!");
+       		myform.find("button").text("Send");
+       		$('#myform')[0].reset();
+     	}, function(err) {
+	       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
+	       myform.find("button").text("Send");
+	    });
+	  return false;
+	});
+
+}); // end of doc ready
+
+
 
 
 
