@@ -23,6 +23,11 @@ h2 {
   padding:  30px 0;
 }
 
+h3 {
+  font-size: 16px;
+}
+
+
 /*end of whole of page settings*/
 
 /*navbar*/
@@ -55,7 +60,7 @@ h2 {
 .navbar-nav li a:hover,
 li.active a {
   background-color: transparent;
-  color: red;
+  color: #7f7777;
   font-weight: bold;
 }
 
@@ -106,7 +111,6 @@ span.icon-bar {
 #about {
   height: 250px;
   background-color: #102633;
-  /*background-color: #010a10;*/
   position: relative;
   color: white;
 }
@@ -124,7 +128,12 @@ span.icon-bar {
 
 /*skills*/
 
+.key-skills {
+  color: #102633;
+}
+
 .skills-grid {
+  padding-left: 100px;
   padding-bottom: 30px;
 }
 
@@ -143,7 +152,7 @@ span.icon-bar {
 }
 
 .tech-div h3 {
-  font-size: 16px;
+  /*font-size: 16px;*/
   margin: 0;
   position: relative;
   top:48%;
@@ -221,7 +230,6 @@ span.icon-bar {
   -o-background-size: cover;
 }
 
-
 .project {
   height: 550px;
   width: 100%;
@@ -234,10 +242,6 @@ span.icon-bar {
   color: #102633;
 }
 
-.project-text h5 {
-
-}
-
 .portfolio-img {
   max-width: 100%;
   max-height: 450px;
@@ -247,14 +251,61 @@ span.icon-bar {
 /*contact*/
 
 #contact {
-  height: 600px;
-  padding: 0;
-  background-color: green;
+  /*height: 600px;*/
+  background-color:#102633;
+  color: white;
 }
+
+.contact-form-div {
+  font-weight: 100;
+  padding: 0 30px;
+}
+
+.btn {
+  background-color: white;
+  color: #102633;
+}
+
+.btn:hover {
+  background-color: #7f7777;
+  color: white;
+}
+
+.alt-contact-div {
+  padding: 10px 0 20px 0;
+}
+
+.alt-contact-wrap {
+  padding: 0;
+  height: 53px;
+}
+
+.contact-icon-div {
+  padding: 0 5px; 
+  color: white; 
+}
+
+.contact-text-div {
+  height: 53px;
+  padding: 0 5px;
+  text-align: left;
+  color: white;
+}
+
+i.fa.fa-mobile,
+i.fa.fa-linkedin-square {
+  font-size: 53px;
+}
+
 
 /*contact icons*/
 i.fa {
   font-size:  50px;
+}
+
+a.social-link:hover i,
+a.social-link:hover h3{
+  color: #7f7777;
 }
 
 /* Portrait tablets and small desktops */
@@ -269,6 +320,10 @@ h2 {
 
 #about p {
   padding: 0 100px 40px 100px;
+}
+
+.skills-grid {
+  padding-left: 0;
 }
 
 .tech-text-div {
@@ -296,6 +351,10 @@ h2 {
   padding:  20px 0;
 }
 
+h3 {
+  font-size: 11px;
+}
+
 /*home page*/
 
 #home {
@@ -317,13 +376,13 @@ h2 {
   font-size: 11px;
 }
 
+.skills-grid {
+  padding-left: 0;
+}
+
 .tech-text-div {
   height: 20px;
   text-align: center;
-}
-
-.tech-div h3 {
-  font-size: 11px;
 }
 
 /*portfolio*/
@@ -334,6 +393,20 @@ h2 {
 
 .project-text h2 {
   padding-top: 75px;
+}
+
+.portfolio-img {
+  max-height: 335px;
+}
+
+/*contact*/
+
+.alt-contact-div {
+  height:180px;
+}
+
+.contact-text-div {
+  padding-left: 10px;
 }
 
 }

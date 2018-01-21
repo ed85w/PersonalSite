@@ -61,13 +61,13 @@
 
     <div class="col-md-12 text-center" id="about">
       <h2>ABOUT ME</h2>
-      <p>I am a highly motivated, dedicated and ambitious full stack developer with experience in both front-end and back-end technologies. Recently, I completed a diploma in software engineering, achieving merit, and I am keen to continue learning new skills as well developing existing ones. As a result of my previous employment I have experience of creating and maintaining a variety of software systems.</p>
+      <p>I am a highly motivated, dedicated and ambitious full stack developer with experience in both front-end and back-end technologies. Recently, I completed a diploma in software engineering, achieving merit, and I am keen to continue learning new skills as well as developing existing ones. As a result of my previous employment I have experience of creating and maintaining a variety of software systems.</p>
     </div>
 
   </div>
 
   <!-- key skills div -->
-  <div class="container-fluid">
+  <div class="container-fluid key-skills">
     <div class="row">
       <div class="col-md-12 text-center">
         <h2>MY KEY SKILLS</h2>
@@ -235,8 +235,8 @@
           <img src="img/project1.png" class="portfolio-img">
         </div>  
         <div class="col-sm-5 col-md-5 project-text">
-          <a href="https://ed85w.github.io/Stream1Project/" target="_blank"><h2>Reggae Cover Band Website</h2></a>
-          <h5>A website for a fictional cover band. Created in Angular.js</h5>
+          <a href="https://ed85w.github.io/Stream1Project/" target="_blank"><h2>REGGAE COVER BAND</h2></a>
+          <h5>A website for a fictional cover band. Created in Angular.js.<br>Hosted on GitHub</h5>
         </div>        
       </div>
     </div>
@@ -248,8 +248,8 @@
           <img src="img/project2.png" class="portfolio-img">
         </div> 
         <div class="col-sm-5 col-md-5 col-md-pull-7 project-text">        
-          <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank"><h2>Wedding Stationery Shop</h2></a>
-          <h5>A simple shop application with basket and Stripe payment function. Created in Django. Hosted on Heroku and AWS</h5>
+          <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank"><h2>WEDDING STATIONERY SHOP</h2></a>
+          <h5>A simple shop application with basket and Stripe payment function. Created in Django.<br>Hosted on Github, Heroku and AWS</h5>
         </div>
       </div>
     </div>
@@ -261,8 +261,8 @@
           <img src="img/project3.png" class="portfolio-img">
         </div>
         <div class="col-sm-5 col-md-5 project-text">  
-          <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank"><h2>Premier League Statistics Site</h2></a>
-          <h5>An interactive statistics page. Created in Flask and using D3.js, DC.js & Crossfilter</h5>
+          <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank"><h2>PREMIER LEAGUE STATISTICS</h2></a>
+          <h5>An interactive statistics page. Created in Flask and using D3.js, DC.js and Crossfilter.<br>Hosted on Github and Heroku </h5>
         </div>
       </div>
     </div>
@@ -273,73 +273,77 @@
   <!-- contact -->
 
   <div class="col-md-12 text-center" id="contact">
-    <h2>CONTACT</h2>
 
-    <div class="col-md-6 test">
+    <div class="row">
 
-      <!-- contact form -->
-      <form id="myform">
+      <h2>CONTACT</h2>
+      <h5>I'd love to hear from you, feel free to contact by any of the means below</h5>
+      <h5>Tel: 07967457677</h5>
 
-        <div class="form-group">
-          <label for="first_name">First Name</label>
-          <input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" />
-        </div>
+      <div class="col-md-6 col-md-offset-3 text-left contact-form">
 
-        <div class="form-group">
-          <label>Last Name</label>
-          <input type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name" />
-        </div>
+        <!-- contact form -->
+        <form id="myform">
 
-        <div class="form-group">
-          <label for="email">Email address</label>
-          <input type="email" class="form-control" id="email" placeholder="Email" name="email" />
-        </div>
+          <div class="form-group">
+            <label for="first_name">First Name *</label>
+            <input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" required/>
+          </div>
 
-        <div class="form-group">
-          <label>Your Message</label>
-          <textarea class="form-control" id="message" placeholder="Message" name="message"></textarea>
-        </div>
+          <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name" />
+          </div>
 
-        <br><br>
-        
-        <button>
-          Send
-        </button>
-      </form>
-      <!-- end of contact form -->
+          <div class="form-group">
+            <label for="email">Email address *</label>
+            <input type="email" class="form-control" id="email" placeholder="Email" name="email" required />
+          </div>
 
+          <div class="form-group">
+            <label>Your Message *</label>
+            <textarea class="form-control" id="message" placeholder="Message" name="message" required></textarea>
+          </div>
+
+          <div class="col-md-12 text-center">
+            <button type="button" class="btn">
+              Send
+            </button>
+          </div>
+        </form>
+
+        <!-- end of contact form -->
+
+      </div>
     </div>
+    <div class="row">
 
-    <div class="col-md-6 test">
-      <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 test">
+      <div class="col-md-6 col-md-offset-3 alt-contact-div">
 
-        <div class="col-xs-3 col-sm-3 col-md-3 tech-div">
-          <i class="fa fa-envelope-o" aria-hidden="true"></i>
-        </div>  
-        <div class="col-md-9 tech-text-div">
-          <h3>ed.walker@hotmail.co.uk</h3>
-        </div>  
-      </div>
+        <a href="https://github.com/ed85w" class="social-link" target="_blank">
+          <div class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4 alt-contact-wrap">
+            <div class="col-xs-3 col-sm-3 col-md-3 contact-icon-div">
+                <i class="devicon-github-plain devicon"></i>
+            </div>  
+            <div class="col-xs-9 col-sm-9 col-md-9 contact-text-div">
+                <h3>github.com/ed85w</h3>
+            </div>  
+          </div>
+        </a>
 
-      <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 test">
-        <div class="col-xs-3 col-sm-3 col-md-3 tech-div">
-            <i class="devicon-github-plain devicon"></i>
-        </div>  
-        <div class="col-md-9 tech-text-div">
-            <h3>https://github.com/ed85w</h3>
-        </div>  
-      </div>
 
-      <div class="col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 test">
-        <div class="col-xs-3 col-sm-3 col-md-3 tech-div">
-          <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-        </div>  
-        <div class="col-md-9 tech-text-div">
-            <h3>linkedin</h3>
-        </div>  
+<!--         <div class="col-xs-8 col-xs-offset-3 col-sm-4 col-sm-offset-0 col-md-6 col-md-offset-0 alt-contact-wrap">
+          <div class="col-xs-3 col-sm-3 col-md-3 contact-icon-div">
+            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+          </div>  
+          <div class="col-xs-9 col-sm-9 col-md-9 contact-text-div">
+              <h3>linkedin</h3>
+          </div>  
+        </div> -->
       </div>
     </div>
   </div>
+</div>
 
 
 
@@ -351,15 +355,13 @@
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src='bootstrap-3.3.7-dist/js/bootstrap.min.js'></script>
 <script src='script.js'></script>
-
-<!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> -->
-
+<!-- emailjs scripts -->
 <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script type="text/javascript">
    (function(){
       emailjs.init("user_lc9o3a7bk8aD9m9dyuAxG");
    })();
 </script>
-
+<!-- end of emailjs scripts -->
 </body>
 </html>
