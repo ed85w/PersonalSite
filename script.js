@@ -66,15 +66,15 @@ $(document).ready(function(){
 	  // Change to your service ID, or keep using the default service
   	var service_id = "default_service";
   	var template_id = "template_VTGznICV";
-  	myform.find("button").text("Sending...");
+  	myform.find("button.btn").text("Sending...");
   	emailjs.send(service_id,template_id,params)
 	  	.then(function(){ 
-			alert("Message Sent!");
-       		myform.find("button").text("Send");
+			alert("Message sent! I'll get back to you as soon as possible!");
+       		myform.find("button.btn").text("Send");
        		$('#myform')[0].reset();
      	}, function(err) {
 	       alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-	       myform.find("button").text("Send");
+	       myform.find("button.btn").text("Send");
 	    });
 	  return false;
 	});
