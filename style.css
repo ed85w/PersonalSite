@@ -138,6 +138,12 @@ span.icon-bar {
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
   transform: translate3d(0, 0, 0);
+
+  -webkit-animation-name: unblur;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: forwards;
   -webkit-transform: translate3d(0, 0, 0);
 }
 
