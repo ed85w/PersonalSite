@@ -63,7 +63,6 @@ $(document).ready(function(){
      	return obj;
   	}, {});
 
-	  // Change to your service ID, or keep using the default service
   	var service_id = "default_service";
   	var template_id = "template_VTGznICV";
   	myform.find("button.btn").text("Sending...");

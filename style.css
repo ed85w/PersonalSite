@@ -103,7 +103,41 @@ span.icon-bar {
   color: white;
   position: relative;
   top:30%;
-  transform: translate(0, -50%);
+  /*transform: translate(0, -50%);*/
+}
+
+/*animation for full stack web developer text*/
+@keyframes unblur {
+    0% {
+      opacity: 0;
+      text-shadow: 0 0 8px white;
+    }
+    33% {
+      opacity: 0.33;
+      text-shadow: 0 0 6px white;
+
+    }
+    66% {
+      opacity: 0.66;
+      text-shadow: 0 0 2px white;
+
+    }
+    100% {
+      opacity: 1;
+      text-shadow: 0 0 0;
+    }
+}
+
+
+#blur-line {
+  opacity: 0;
+  animation-name: unblur;
+  animation-duration: 2s;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 /*about*/
@@ -135,6 +169,7 @@ span.icon-bar {
 .skills-grid {
   padding-left: 100px;
   padding-bottom: 30px;
+  border-bottom: 1px solid #d0d5d9;
 }
 
 .tech-div {
@@ -166,6 +201,11 @@ span.icon-bar {
 
 
 /*portfolio*/
+
+#portfolio div div h2 {
+  margin-bottom: 0;
+  color: #102633;
+}
 
 #project1,
 #project2 {
@@ -339,7 +379,7 @@ h2 {
 }
 
 .project-text h2 {
-  padding-top: 100px;
+  padding-top: 75px;
 }
 
 }
@@ -375,7 +415,7 @@ h3 {
 /*about page*/
 
 #about p {
-  padding: 0 50px 40px 50px;
+  padding: 10px 30px 40px 30px;
   font-size: 11px;
 }
 
