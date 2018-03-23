@@ -67,9 +67,6 @@ li.active a {
 
 .navbar-header {
   height: 50px;
-  /*background-color: #102633;*/
-
-
 }
 
 /*navbar button on mobile*/
@@ -104,32 +101,10 @@ span.icon-bar {
   color: white;
   position: relative;
   top:30%;
-  /*transform: translate(0, -50%);*/
 }
 
 /*animation for full stack web developer text*/
 @keyframes unblur {
-    0% {
-      opacity: 0;
-      text-shadow: 0 0 8px white;
-    }
-    33% {
-      opacity: 0.33;
-      text-shadow: 0 0 6px white;
-
-    }
-    66% {
-      opacity: 0.66;
-      text-shadow: 0 0 2px white;
-
-    }
-    100% {
-      opacity: 1;
-      text-shadow: 0 0 0;
-    }
-}
-
-@-webkit-keyframes unblur {
     0% {
       opacity: 0;
       text-shadow: 0 0 8px white;
@@ -155,14 +130,14 @@ span.icon-bar {
   opacity: 0;
   animation-name: unblur;
   animation-duration: 2s;
-  animation-delay: 0.5s;
+  animation-delay: 1.2s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
   transform: translate3d(0, 0, 0);
 
   -webkit-animation-name: unblur;
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 0.5s;
+  -webkit-animation-delay: 1.2s;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
   -webkit-transform: translate3d(0, 0, 0);
