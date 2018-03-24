@@ -128,19 +128,24 @@ span.icon-bar {
 
 #blur-line {
   opacity: 0;
-  animation-name: unblur;
+  /*animation-name: unblur;*/
   animation-duration: 2s;
-  animation-delay: 1.2s;
+  animation-delay: 0.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
   transform: translate3d(0, 0, 0);
 
-  -webkit-animation-name: unblur;
+  /*-webkit-animation-name: unblur;*/
   -webkit-animation-duration: 2s;
-  -webkit-animation-delay: 1.2s;
+  -webkit-animation-delay: 0.5s;
   -webkit-animation-timing-function: ease-out;
   -webkit-animation-fill-mode: forwards;
   -webkit-transform: translate3d(0, 0, 0);
+}
+
+.add_keyframe{
+  animation-name: unblur;
+  -webkit-animation-name: unblur;
 }
 
 /*about*/

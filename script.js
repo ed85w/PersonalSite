@@ -1,19 +1,5 @@
 
-$(window).on('scroll', function() {
 
-	// Scale effect on scroll to portfolio
-	var StartPOS = $('#about').position().top;
-	var scrollPOS = $(this).scrollTop();
-
-	if (scrollPOS >= StartPOS) {
-		$('#project1').css('transform', 'scale(1) translate3d(0,0,0)')
-		$('#project2').css('transform', 'scale(1) translate3d(0,0,0)')
-	} else {
-		$('#project1').css('transform', 'scale(0) translate3d(0,0,0)')
-		$('#project2').css('transform', 'scale(0) translate3d(0,0,0)')
-	}
-
-});
 
 
 
@@ -42,6 +28,23 @@ $(document).ready(function(){
 			}, 800);
 
 		} // End if
+
+	});
+
+
+	$(window).on('scroll', function() {
+
+		// Scale effect on scroll to portfolio
+		var StartPOS = $('#about').position().top;
+		var scrollPOS = $(this).scrollTop();
+
+		if (scrollPOS >= StartPOS) {
+			$('#project1').css('transform', 'scale(1) translate3d(0,0,0)')
+			$('#project2').css('transform', 'scale(1) translate3d(0,0,0)')
+		} else {
+			$('#project1').css('transform', 'scale(0) translate3d(0,0,0)')
+			$('#project2').css('transform', 'scale(0) translate3d(0,0,0)')
+		}
 
 	});
 
@@ -79,6 +82,14 @@ $(document).ready(function(){
 	});
 
 }); // end of doc ready
+
+
+// run keyframe animation once page has loaded
+$(window).on('load', function() {
+	window.setTimeout(function() {
+		$('#blur-line').addClass('add_keyframe');
+	}, 100);
+});
 
 
 
