@@ -63,6 +63,7 @@ li.active a {
   background-color: transparent;
   color: #7f7777;
   font-weight: bold;
+  outline: none; /* stops outline on firefox */
 }
 
 .navbar-header {
