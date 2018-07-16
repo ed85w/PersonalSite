@@ -51,6 +51,7 @@ h3 {
 }
 
 .navbar-nav li a {
+  font-size: 17px;
   color: white;
   padding: 25px 15px 25px 15px;
 }
@@ -58,12 +59,13 @@ h3 {
 
 /*active nav item */
 .navbar-nav li a:hover,
-.navbar-nav li a:focus,
 li.active a {
   background-color: transparent;
   color: #7f7777;
-  font-weight: bold;
   outline: none; /* stops outline on firefox */
+}
+.navbar-nav li a:focus {
+  background-color: transparent;
 }
 
 .navbar-header {
@@ -150,14 +152,12 @@ span.icon-bar {
 
 #blur-line {
   opacity: 0;
-  /*animation-name: unblur;*/
   animation-duration: 2s;
   animation-delay: 0.5s;
   animation-timing-function: ease-out;
   animation-fill-mode: forwards;
   transform: translate3d(0, 0, 0);
 
-  /*-webkit-animation-name: unblur;*/
   -webkit-animation-duration: 2s;
   -webkit-animation-delay: 0.5s;
   -webkit-animation-timing-function: ease-out;
@@ -237,6 +237,18 @@ span.icon-bar {
   color: #102633;
 }
 
+/* project background images */
+#project1 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/wood.jpeg);
+}
+#project2 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/flowers.jpeg);
+}
+#project3 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/grass1.jpeg);
+}
+
+/* set up so that first 2 projects can 'zoom in' to view on scroll */
 #project1,
 #project2 {
     -ms-transform: scale(0); /* IE 9 */
@@ -245,71 +257,39 @@ span.icon-bar {
     transition: all 1s ease-in-out;
 }
 
-#project3 {
-  position: relative;
-}
-
-#project1::after {
-  content: "";
-  background: url(img/wood.jpeg);
-  opacity: 0.7;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-#project2::after {
-  content: "";
-  background: url(img/flowers.jpeg);
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
-#project3::after {
-  content: "";
-  background: url(img/grass1.jpeg);
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-  background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
-
 .project {
   height: 550px;
   width: 100%;
   padding: 30px 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  position: relative;
+}
+
+.project-text {
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 
 .project-text h2 {
+  text-align: left;
   padding-top: 150px;
-  color: #102633;
+  color: black;
+}
+
+.project-text h4 {
+  text-align: left;
+  line-height: inherit;
+  color: black;
 }
 
 .portfolio-img {
@@ -408,8 +388,13 @@ h2 {
   height: 400px;
 }
 
+.project-text {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .project-text h2 {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 }
@@ -464,8 +449,13 @@ h3 {
   height: 550px;
 }
 
+.project-text {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 .project-text h2 {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 
 .portfolio-img {
