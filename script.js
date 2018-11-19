@@ -1,8 +1,4 @@
 
-
-
-
-
 $(document).ready(function(){
 	// Add smooth scrolling to all links
 	$("a").on('click', function(event) {
@@ -35,16 +31,35 @@ $(document).ready(function(){
 	$(window).on('scroll', function() {
 
 		// Scale effect on scroll to portfolio
-		var StartPOS = $('#about').position().top;
+		var portfolioStartPOS = $('#portfolio').position().top - 500;
+		var skillsStartPos = $('.key-skills').position().top - 500;
 		var scrollPOS = $(this).scrollTop();
+		var firstTechDiv = $('.tech-div:first');
 
-		if (scrollPOS >= StartPOS) {
+		if (scrollPOS >= portfolioStartPOS) {
 			$('#project1').css('transform', 'scale(1) translate3d(0,0,0)')
 			$('#project2').css('transform', 'scale(1) translate3d(0,0,0)')
 		} else {
 			$('#project1').css('transform', 'scale(0) translate3d(0,0,0)')
 			$('#project2').css('transform', 'scale(0) translate3d(0,0,0)')
 		}
+
+		// skills grid skills 'bounce in' when skills grid div is (nearly) scrolled to
+		if (scrollPOS >= skillsStartPos && !firstTechDiv.hasClass('bounceInDown')){
+			$('.skills-grid').children('div').each(function (i) {
+
+				function addKeyframe() {
+					currentDiv.addClass('bounceInDown');
+					console.log('css added to ' + currentDiv);
+				}
+				var time = i * 100
+				var currentDiv = $(this)
+				setTimeout(addKeyframe,time);
+
+			});
+		};
+
+
 
 	});
 
