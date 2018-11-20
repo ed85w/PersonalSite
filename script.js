@@ -32,16 +32,16 @@ $(document).ready(function(){
 
 		// Scale effect on scroll to portfolio
 		var portfolioStartPOS = $('#portfolio').position().top - 500;
-		var skillsStartPos = $('.key-skills').position().top - 500;
+		var skillsStartPos = $('.key-skills').position().top - 400;
 		var scrollPOS = $(this).scrollTop();
 		var firstTechDiv = $('.tech-div:first');
 
 		if (scrollPOS >= portfolioStartPOS) {
-			$('#project1').css('transform', 'scale(1) translate3d(0,0,0)')
-			$('#project2').css('transform', 'scale(1) translate3d(0,0,0)')
+			$('#project1').css('transform', 'scale(1) translate3d(0,0,0)');
+			$('#project2').css('transform', 'scale(1) translate3d(0,0,0)');
 		} else {
-			$('#project1').css('transform', 'scale(0) translate3d(0,0,0)')
-			$('#project2').css('transform', 'scale(0) translate3d(0,0,0)')
+			$('#project1').css('transform', 'scale(0) translate3d(0,0,0)');
+			$('#project2').css('transform', 'scale(0) translate3d(0,0,0)');
 		}
 
 		// skills grid skills 'bounce in' when skills grid div is (nearly) scrolled to
@@ -52,8 +52,8 @@ $(document).ready(function(){
 					currentDiv.addClass('bounceInDown');
 					console.log('css added to ' + currentDiv);
 				}
-				var time = i * 100
-				var currentDiv = $(this)
+				var time = i * 100;
+				var currentDiv = $(this);
 				setTimeout(addKeyframe,time);
 
 			});
@@ -102,7 +102,8 @@ $(document).ready(function(){
 // run keyframe animation once page has loaded
 $(window).on('load', function() {
 	window.setTimeout(function() {
-		$('#blur-line').addClass('add_keyframe');
+		$('#blur-line').addClass('unblur'),
+		$('.fa-arrow-alt-circle-down').addClass('slideInDown');
 	}, 100);
 });
 

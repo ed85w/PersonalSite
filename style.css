@@ -149,7 +149,6 @@ span.icon-bar {
     }
 }
 
-
 #blur-line {
   opacity: 0;
   animation-duration: 2s;
@@ -165,7 +164,7 @@ span.icon-bar {
   -webkit-transform: translate3d(0, 0, 0);
 }
 
-.add_keyframe{
+.unblur{
   animation-name: unblur;
   -webkit-animation-name: unblur;
 }
@@ -459,9 +458,13 @@ span.icon-bar {
 
 /*portfolio*/
 
+.portfolio-header {
+  background-color: #102633;
+  color: white;
+}
+
 #portfolio div div h2 {
   margin-bottom: 0;
-  color: #102633;
 }
 
 /* project background images */
