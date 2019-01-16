@@ -31,7 +31,7 @@ $(document).ready(function(){
 	$(window).on('scroll', function() {
 
 		// Scale effect on scroll to portfolio
-		var portfolioStartPOS = $('#portfolio').position().top - 500;
+		var portfolioStartPOS = $('#portfolio').position().top - 400;
 		var skillsStartPos = $('.key-skills').position().top - 400;
 		var scrollPOS = $(this).scrollTop();
 		var firstTechDiv = $('.tech-div:first');
