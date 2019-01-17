@@ -93,8 +93,6 @@ span.icon-bar {
   height: 100vh;
   margin-top: 70px;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
 }
@@ -215,9 +213,12 @@ span.icon-bar {
 .slideInDown {
   -webkit-animation-name: slideInDown;
   animation-name: slideInDown;
-  animation-duration: 1.5s;
-  animation-delay: 2s;
-  animation-fill-mode: forwards;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 /* bounce animation for arrow*/
@@ -317,7 +318,8 @@ span.icon-bar {
 #about p {
   position: absolute;
   top:60%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
   padding-right: 250px;
   padding-left: 250px;
   font-size: 16px;
@@ -424,8 +426,10 @@ span.icon-bar {
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
   animation-name: bounceInDown;
-  animation-fill-mode: forwards;
-  animation-duration: 0.75s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.75s;
+          animation-duration: 0.75s;
 }
 
 
@@ -447,7 +451,8 @@ span.icon-bar {
   margin: 0;
   position: relative;
   top:48%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 /*tech icons*/
@@ -469,24 +474,28 @@ span.icon-bar {
 
 /* project background images */
 #project1 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img/paint.jpg);
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/paint.jpg);
 }
 #project2 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img/wood.jpeg);
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/wood.jpeg);
 }
 #project3 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img/flowers.jpeg);
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/flowers.jpeg);
 }
 #project4 {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img/grass1.jpeg);
   background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/grass1.jpeg);
 }
 
 /* set up so that first 2 projects can 'zoom in' to view on scroll */
 #project1,
-#project2 {
-    -ms-transform: scale(0); /* IE 9 */
+#project2 { /* IE 9 */
     -webkit-transform: scale(0); /* Safari */
     transform: scale(0);
+    -webkit-transition: all 1s ease-in-out;
     transition: all 1s ease-in-out;
 }
 
@@ -500,8 +509,6 @@ span.icon-bar {
   right: 0;
   position: absolute;
   background-position: center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   position: relative;
@@ -657,7 +664,8 @@ h3 {
   color: white;
   position: relative;
   top:30%;
-  transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 /*about page*/
