@@ -334,12 +334,12 @@ span.icon-bar {
 
 .key-skills {
   color: #102633;
+  padding-left: 100px;
+  padding-bottom: 30px;
 }
 
 .skills-grid {
-  padding-left: 100px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid #d0d5d9;
+  padding-bottom: 20px;
 }
 
 .tech-div {
@@ -623,7 +623,7 @@ h2 {
   padding: 0 100px 40px 100px;
 }
 
-.skills-grid {
+.key-skills {
   padding-left: 0;
 }
 
@@ -683,7 +683,7 @@ h3 {
   font-size: 11px;
 }
 
-.skills-grid {
+.key-skills {
   padding-left: 0;
 }
 
