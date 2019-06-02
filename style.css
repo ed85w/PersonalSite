@@ -1,7 +1,3 @@
-.test {
-  border: 1px solid red;
-}
-
 /*whole of page settings*/
 
 body {
@@ -31,61 +27,45 @@ h3 {
 a:hover{
   text-decoration: none;
 }
+
 /*end of whole of page settings*/
 
-/*navbar*/
+/* navbar */
 
-.navbar .navbar-nav {
-  display: inline-block;
-  float: none;
-  vertical-align: top;
-  margin-bottom: 0;
-  border-radius: 0;
-
+/* burger icon */
+.navbar-toggler span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: white;
+  margin-top: 4px;
 }
 
-.navbar .navbar-collapse {
-  text-align: center;
+.navbar-toggler {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
-#navbar-container {
-  background-color: #020f16;
-
+.navbar-toggler:active,
+.navbar-toggler:focus{
+  outline: none;
 }
 
-.navbar-nav li a {
+/* end of burger */
+#nav-main {
+  background: #020f16;
+  padding: 0;
   font-size: 17px;
+}
+
+.navbar-expand-md a.nav-item.nav-link {
   color: white;
-  padding: 25px 15px 25px 15px;
+  padding: 20px 15px;
 }
 
-
-/*active nav item */
-.navbar-nav li a:hover,
-li.active a {
-  background-color: transparent;
+.navbar-expand-md a.nav-item.nav-link:hover,
+.navbar-expand-md a.nav-item.nav-link:active {
   color: #7f7777;
-  outline: none; /* stops outline on firefox */
-}
-.navbar-nav li a:focus {
-  background-color: transparent;
-}
-
-.navbar-header {
-  height: 50px;
-}
-
-/*navbar button on mobile*/
-
-button.navbar-toggle,
-button.navbar-toggle.collapsed {
-  float: none;
-  margin: 0;
-  padding-top: 15px;
-}
-
-span.icon-bar {
-  background-color: white;
 }
 
 /*home page*/
@@ -94,17 +74,21 @@ span.icon-bar {
   background-image: url(img/space.jpeg);
   width: 100%;
   height: 100vh;
-  margin-top: 70px;
   background-position: center;
   background-size: cover;
   -o-background-size: cover;
 }
 
 #home h1 {
-  font-size: 50px;
+  font-size: 40px;
   color: white;
   position: relative;
   top:30%;
+  transform: translate(0, -50%);
+}
+
+#blur-line {
+  margin-top: 20px;
 }
 
 /*animation for full stack web developer text*/
@@ -334,7 +318,6 @@ span.icon-bar {
 
 .key-skills {
   color: #102633;
-  padding-left: 100px;
   padding-bottom: 30px;
 }
 
@@ -435,10 +418,6 @@ span.icon-bar {
           animation-duration: 0.75s;
 }
 
-
-
-
-
 .tech-icon-div {
   padding: 0 5px;  
 }
@@ -446,7 +425,7 @@ span.icon-bar {
 .tech-text-div {
   height: 53px;
   padding: 0 5px;
-  text-align: left;
+  text-align: center;
 }
 
 .tech-div h3 {
@@ -609,116 +588,111 @@ a.social-link:hover h3{
   color: #7f7777;
 }
 
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-/*// css specific properties col-sm-**/
-
-h2 {
-  font-size: 20px;
-}
-
-/*about*/
-
-#about p {
-  padding: 0 100px 40px 100px;
-}
-
-.key-skills {
-  padding-left: 0;
-}
-
-.tech-text-div {
-  text-align: center;
-}
-
-/*portfolio */
-.project {
-  height: 400px;
-}
-
-.project-text {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.project-text h2 {
-  padding-top: 50px;
-}
-
-}
-
-
-
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
 /*// css specific properties col-xs-**/
 
-h2 {
-  padding:  20px 0;
-}
+  h2 {
+    padding:  20px 0;
+  }
 
-h3 {
-  font-size: 11px;
-}
+  h3 {
+    font-size: 11px;
+  }
 
-/*home page*/
+  /*home page*/
 
-#home {
-  margin-top: 50px;
-}
+  #home h1 {
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top:30%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
 
-#home h1 {
-  font-size: 40px;
-  color: white;
-  position: relative;
-  top:30%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-}
+  /*about page*/
 
-/*about page*/
+  #about p {
+    padding: 10px 30px 40px 30px;
+    font-size: 11px;
+  }
 
-#about p {
-  padding: 10px 30px 40px 30px;
-  font-size: 11px;
-}
+  .key-skills {
+    padding-left: 0;
+  }
 
-.key-skills {
-  padding-left: 0;
-}
+  .tech-text-div {
+    height: 20px;
+    text-align: center;
+  }
 
-.tech-text-div {
-  height: 20px;
-  text-align: center;
-}
+  /*portfolio*/
 
-/*portfolio*/
+  .project {
+    height: 550px;
+  }
 
-.project {
-  height: 550px;
-}
+  .project-text {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
-.project-text {
-  padding-left: 0;
-  padding-right: 0;
-}
+  .project-text h2 {
+    padding-top: 50px;
+  }
 
-.project-text h2 {
-  padding-top: 50px;
-}
+  .portfolio-img {
+    max-height: 335px;
+  }
 
-.portfolio-img {
-  max-height: 335px;
-}
+  /*contact*/
 
-/*contact*/
+  .alt-contact-div {
+    height:180px;
+  }
 
-.alt-contact-div {
-  height:180px;
-}
-
-.contact-text-div {
-  padding-left: 10px;
-}
+  .contact-text-div {
+    padding-left: 10px;
+  }
 
 }
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+/*// css specific properties col-sm-**/
+
+  h2 {
+    font-size: 20px;
+  }
+
+  /*about*/
+
+  #about p {
+    padding: 0 100px 40px 100px;
+  }
+
+  .key-skills {
+    padding-left: 0;
+  }
+
+  .tech-text-div {
+    text-align: center;
+  }
+
+  /*portfolio */
+  .project {
+    height: 400px;
+  }
+
+  .project-text {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .project-text h2 {
+    padding-top: 50px;
+  }
+
+}
+

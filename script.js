@@ -9,17 +9,10 @@ $(document).ready(function(){
 			// Store hash
 			var hash = this.hash;
 
-			// Get height of navbar(mob or screen)
-			if ($('#navbar1').height() == 70) {
-				var navHeight = 70;
-			} else {
-				var navHeight = 50;
-			}
-
 			// Using jQuery's animate() method to add smooth page scroll
 			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate({
-				scrollTop: $(hash).offset().top-navHeight
+				scrollTop: $(hash).offset().top
 			}, 800);
 
 		} // End if
