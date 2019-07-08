@@ -17,6 +17,7 @@ body {
 h2 {
   margin-top: 0;
   padding:  30px 0;
+  font-size: 30px;
 }
 
 h3 {
@@ -42,8 +43,8 @@ a:hover{
 }
 
 .navbar-toggler {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 }
 
 .navbar-toggler:active,
@@ -60,7 +61,8 @@ a:hover{
 
 .navbar-expand-md a.nav-item.nav-link {
   color: white;
-  padding: 20px 15px;
+  padding: 25px 15px;
+  line-height: 20px;
 }
 
 .navbar-expand-md a.nav-item.nav-link:hover,
@@ -74,6 +76,7 @@ a:hover{
   background-image: url(img/space.jpeg);
   width: 100%;
   height: 100vh;
+  margin-top: 50px;
   background-position: center;
   background-size: cover;
   -o-background-size: cover;
@@ -296,21 +299,13 @@ a:hover{
 /*about*/
 
 #about {
-  height: 250px;
   background-color: #102633;
   position: relative;
   color: white;
 }
 
 #about p {
-  position: absolute;
-  top:60%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  padding-right: 250px;
-  padding-left: 250px;
-  font-size: 16px;
-  font-weight: 100;
+  padding-bottom: 30px;
 }
 
 
@@ -429,7 +424,6 @@ a:hover{
 }
 
 .tech-div h3 {
-  /*font-size: 16px;*/
   margin: 0;
   position: relative;
   top:48%;
@@ -509,7 +503,7 @@ a:hover{
 
 .project-text h2 {
   text-align: left;
-  padding-top: 150px;
+  padding-top: 50px;
   color: black;
 }
 
@@ -548,49 +542,21 @@ a:hover{
   color: white;
 }
 
-.alt-contact-div {
-  padding: 20px 0 20px 0;
-}
-
-.alt-contact-wrap {
-  padding: 0;
-  height: 53px;
-}
-
 .contact-icon-div {
-  padding: 0 5px; 
-  color: white; 
+  padding: 30px 0; 
 }
 
-.contact-text-div {
-  height: 53px;
-  padding: 0 5px;
-  text-align: left;
+a.github-link{
   color: white;
 }
 
-i.fa.fa-mobile,
-i.fa.fa-linkedin-square {
-  font-size: 53px;
-}
-
-label {
-  font-weight: 100;
-}
-
-/*contact icons*/
-i.fa {
-  font-size:  50px;
-}
-
-a.social-link:hover i,
-a.social-link:hover h3{
+a.github-link:hover i,
+a.github-link:hover h3{
   color: #7f7777;
 }
 
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-/*// css specific properties col-xs-**/
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px){
 
   h2 {
     padding:  20px 0;
@@ -601,9 +567,12 @@ a.social-link:hover h3{
   }
 
   /*home page*/
+  #home {
+    margin-top: 70px;
+  }
 
   #home h1 {
-    font-size: 40px;
+    font-size: 50px;
     color: white;
     position: relative;
     top:30%;
@@ -615,7 +584,7 @@ a.social-link:hover h3{
 
   #about p {
     padding: 10px 30px 40px 30px;
-    font-size: 11px;
+    /* font-size: 11px; */
   }
 
   .key-skills {
@@ -658,12 +627,11 @@ a.social-link:hover h3{
 
 }
 
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-/*// css specific properties col-sm-**/
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
 
   h2 {
-    font-size: 20px;
+    /* font-size: 30px; */
   }
 
   /*about*/

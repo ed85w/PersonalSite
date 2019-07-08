@@ -9,10 +9,17 @@ $(document).ready(function(){
 			// Store hash
 			var hash = this.hash;
 
+			// Get height of navbar(mob or screen)
+			if ($('#nav-main').height() == 70) {
+				var navHeight = 70;
+			} else {
+				var navHeight = 50;
+			}
+
 			// Using jQuery's animate() method to add smooth page scroll
 			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate({
-				scrollTop: $(hash).offset().top
+				scrollTop: $(hash).offset().top-navHeight
 			}, 800);
 
 		} // End if
@@ -59,10 +66,8 @@ $(document).ready(function(){
 		
 
 	// collapse navbar after selection on mob
-	$(document).on('click','.navbar-collapse.in',function(e) {
-		if ($(e.target).is('a') && $(e.target).attr('class') != 'dropdown-toggle' ) {
-			$(this).collapse('hide').delay(180);
-		}
+	$('.navbar-nav>a').on('click', function(){
+		$('.navbar-collapse').collapse('hide').delay(180);
 	});
 		
 	// email js code

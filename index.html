@@ -32,7 +32,7 @@
   
   <!-- navbar -->
 
-  <nav class="navbar navbar-expand-md justify-content-center" id="nav-main">
+  <nav class="navbar navbar-expand-md justify-content-center fixed-top" id="nav-main">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span></span>
       <span></span>
@@ -52,21 +52,23 @@
   <!-- home page -->
 
   <div class="container-fluid">
-		<div class="col-md-12 text-center" id="home">
-      <h1>ED WALKER</h1>
-      <h1 id="blur-line">FULL STACK WEB DEVELOPER</h1>
-      <h1 id="arrow" class="bounce"><a href="#about"><i class="far fa-arrow-alt-circle-down"></i></a></h1>
+    <div class="row">
+      <div class="col-md-12 text-center" id="home">
+        <h1>ED WALKER</h1>
+        <h1 id="blur-line">FULL STACK WEB DEVELOPER</h1>
+        <h1 id="arrow" class="bounce"><a href="#about"><i class="far fa-arrow-alt-circle-down"></i></a></h1>
+      </div>
     </div>
   </div>
 
   <!-- about div -->
   <div class="container-fluid">
-
-    <section class="col-md-12 text-center" id="about">
-      <h2>ABOUT ME</h2>
-      <p>Full stack web developer, based in York, with experience in both front-end and back-end technologies. I enjoy producing attractive, professional and fully mobile responsive websites and applications for clients.</p>
-    </section>
-
+    <div class="row">
+      <section class="col-md-12 text-center" id="about">
+        <h2>ABOUT ME</h2>
+        <p>Full stack web developer, based in York, with experience in both front-end and back-end technologies. I enjoy producing attractive, professional and fully mobile responsive websites and applications for clients.</p>
+      </section>
+    </div>
   </div>
 
   <!-- key skills div -->
@@ -272,129 +274,105 @@
     </div>
 
     <!-- project 1 -->
-    <div class="row">
-      <div class="row project" id="project1">
-        <div class="col-7 col-push-5">
-          <a href="https://www.tinystompers.co.uk" target="_blank">
-            <img src="img/project4.png" class="portfolio-img" alt="Tiny Stompers Project Image">
-          </a>
-        </div>  
-        <div class="col-sm-5 col-md-5 col-md-pull-7 project-text"> 
-          <a href="https://www.tinystompers.co.uk" target="_blank"><h2 class="project-title">Tiny Stompers</h2></a>
-          <h4>Client work. A Website for a children's music and movement group. Created using Vue.js. Hosted on GitHub</h4>
-        </div>        
-      </div>
+    <div class="row project" id="project1">
+      <div class="col-12 col-md-7 order-md-2">
+        <a href="https://www.tinystompers.co.uk" target="_blank">
+          <img src="img/project4.png" class="portfolio-img" alt="Tiny Stompers Project Image">
+        </a>
+      </div>  
+      <div class="col-12 col-md-5 order-md-1 project-text"> 
+        <a href="https://www.tinystompers.co.uk" target="_blank"><h2 class="project-title">Tiny Stompers</h2></a>
+        <h4>Client work. A Website for a children's music and movement group. Created using Vue.js. Hosted on GitHub</h4>
+      </div>        
     </div>
 
     <!-- project 2 -->
-    <div class="row">
-      <div class="row project" id="project2">
-        <div class=" col-sm-7 col-md-7 ">
-          <a href="https://ed85w.github.io/Stream1Project/" target="_blank">
-            <img src="img/project1.png" class="portfolio-img" alt="Reggae Band Project Image">
-          </a>
-        </div>  
-        <div class="col-sm-5 col-md-5 project-text">
-          <a href="https://ed85w.github.io/Stream1Project/" target="_blank"><h2>REGGAE COVER BAND</h2></a>
-          <h4>A website for a fictional cover band. Created using Angular.js. Hosted on GitHub</h4>
-        </div>        
-      </div>
+    <div class="row project" id="project2">
+      <div class="col-12 col-md-7">
+        <a href="https://ed85w.github.io/Stream1Project/" target="_blank">
+          <img src="img/project1.png" class="portfolio-img" alt="Reggae Band Project Image">
+        </a>
+      </div>  
+      <div class="col-12 col-md-5 project-text">
+        <a href="https://ed85w.github.io/Stream1Project/" target="_blank"><h2>REGGAE COVER BAND</h2></a>
+        <h4>A website for a fictional cover band. Created using Angular.js. Hosted on GitHub</h4>
+      </div>        
     </div>
 
     <!-- project 3 -->
-    <div class="row">
-      <div class="row project" id="project3">
-        <div class="col-sm-7 col-md-7 col-md-push-5">
-          <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank">
-            <img src="img/project2.png" class="portfolio-img" alt="Wedding Shop Project Image">
-          </a>
-        </div> 
-        <div class="col-sm-5 col-md-5 col-md-pull-7 project-text">        
-          <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank"><h2>WEDDING STATIONERY SHOP</h2></a>
-          <h4>Shop application with basket and Stripe payment function. Created in Django. Hosted on Github, Heroku and AWS</h4>
-        </div>
+    <div class="row project" id="project3">
+      <div class="col-12 col-md-7 order-md-2">
+        <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank">
+          <img src="img/project2.png" class="portfolio-img" alt="Wedding Shop Project Image">
+        </a>
+      </div> 
+      <div class="col-12 col-md-5 order-md-1 project-text">        
+        <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank"><h2>WEDDING STATIONERY SHOP</h2></a>
+        <h4>Shop application with basket and Stripe payment function. Created in Django. Hosted on Github, Heroku and AWS</h4>
       </div>
     </div>
 
-    <!-- project 3 -->
-    <div class="row">
-      <div class="project" id="project4">
-        <div class="col-sm-7 col-md-7">
-          <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank">
-            <img src="img/project3.png" class="portfolio-img" alt="Premier League Statistics Project Image">
-          </a>
-        </div>
-        <div class="col-sm-5 col-md-5 project-text">  
-          <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank"><h2>PREMIER LEAGUE STATISTICS</h2></a>
-          <h4>An interactive statistics page. Created in Flask and using D3.js, DC.js and Crossfilter. Hosted on Github and Heroku </h4>
-        </div>
+    <!-- project 4 -->
+    <div class="row project" id="project4">
+      <div class="col-12 col-md-7">
+        <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank">
+          <img src="img/project3.png" class="portfolio-img" alt="Premier League Statistics Project Image">
+        </a>
+      </div>
+      <div class="col-12 col-md-5 project-text">  
+        <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank"><h2>PREMIER LEAGUE STATISTICS</h2></a>
+        <h4>An interactive statistics page. Created in Flask and using D3.js, DC.js and Crossfilter. Hosted on Github and Heroku </h4>
       </div>
     </div>
   </section>
 
-
-
   <!-- contact -->
 
-  <section class="col-md-12 text-center" id="contact">
-
+  <section class="container-fluid text-center" id="contact">
     <div class="row">
+      <div class="col-12">
+        <h2>CONTACT</h2>
+        <h5>I'd love to hear from you, feel free to contact me by any of the means below</h5>
+        <h5>Tel: 07967457677</h5>
 
-      <h2>CONTACT</h2>
-      <h5>I'd love to hear from you, feel free to contact me by any of the means below</h5>
-      <h5>Tel: 07967457677</h5>
+        <div class="col-12 col-md-6 offset-md-3 text-left contact-form">
 
-      <div class="col-md-6 col-md-offset-3 text-left contact-form">
+          <!-- contact form -->
+          <form id="myform">
 
-        <!-- contact form -->
-        <form id="myform">
+            <div class="form-group">
+              <label for="first_name">Name</label>
+              <input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" required/>
+            </div>
 
-          <div class="form-group">
-            <label for="first_name">First Name *</label>
-            <input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" required/>
-          </div>
+            <div class="form-group">
+              <label for="email">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Email" name="email" required />
+            </div>
 
-          <div class="form-group">
-            <label>Last Name</label>
-            <input type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name" />
-          </div>
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea class="form-control" id="message" placeholder="Message" name="message" required></textarea>
+            </div>
 
-          <div class="form-group">
-            <label for="email">Email address *</label>
-            <input type="email" class="form-control" id="email" placeholder="Email" name="email" required />
-          </div>
+            <div class="col-12 mt-4 text-center">
+              <button class="btn">
+                Send
+              </button>
+            </div>
+          </form>
 
-          <div class="form-group">
-            <label>Your Message *</label>
-            <textarea class="form-control" id="message" placeholder="Message" name="message" required></textarea>
-          </div>
+          <!-- end of contact form -->
 
-          <div class="col-md-12 text-center">
-            <button class="btn">
-              Send
-            </button>
-          </div>
-        </form>
-
-        <!-- end of contact form -->
-
+        </div>
       </div>
     </div>
-    <div class="row">
-
-      <div class="col-md-6 col-md-offset-3 alt-contact-div">
-
-        <a href="https://github.com/ed85w" class="social-link" target="_blank">
-          <div class="col-xs-8 col-xs-offset-3 col-sm-6 col-sm-offset-4 col-md-6 col-md-offset-4 alt-contact-wrap">
-            <div class="col-xs-3 col-sm-3 col-md-3 contact-icon-div">
-                <i class="devicon-github-plain devicon"></i>
-            </div>  
-            <div class="col-xs-9 col-sm-9 col-md-9 contact-text-div">
-                <h3>github.com/ed85w</h3>
-            </div>  
-          </div>
+    <div class="row justify-content-center">
+      <div class="col-12 contact-icon-div">
+        <a href="https://github.com/ed85w" class="github-link" target="_blank">
+          <i class="devicon-github-plain devicon"></i>
+          <h3>github.com/ed85w</h3>
         </a>
-
       </div>
     </div>
   </section>
