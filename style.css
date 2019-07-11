@@ -599,16 +599,18 @@ a.github-link:hover h3{
   /*portfolio*/
 
   .project {
-    height: 550px;
+    height: 400px;
   }
 
   .project-text {
+    /* height: fit-content;
+    transform: translateY(50%);
     padding-left: 0;
-    padding-right: 0;
+    padding-right: 0; */
   }
 
   .project-text h2 {
-    padding-top: 50px;
+    padding-top: 0px;
   }
 
   .portfolio-img {
@@ -650,16 +652,12 @@ a.github-link:hover h3{
 
   /*portfolio */
   .project {
-    height: 400px;
+    height: 550px;
   }
 
   .project-text {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .project-text h2 {
-    padding-top: 50px;
   }
 
 }

@@ -70,31 +70,6 @@ $(document).ready(function(){
 		$('.navbar-collapse').collapse('hide').delay(180);
 	});
 		
-	// email js code
-	var myform = $("form#myform");
-	myform.submit(function(event){
-		event.preventDefault();
-		
-		var params = myform.serializeArray().reduce(function(obj, item) {
-			obj[item.name] = item.value;
-			return obj;
-		}, {});
-		
-		var service_id = "default_service";
-		var template_id = "template_VTGznICV";
-		myform.find("button.btn").text("Sending...");
-		emailjs.send(service_id,template_id,params)
-		.then(function(){ 
-			alert("Message sent! I'll get back to you as soon as possible!");
-			myform.find("button.btn").text("Send");
-			$('#myform')[0].reset();
-		}, function(err) {
-			alert("Send email failed!\r\n Response:\n " + JSON.stringify(err));
-			myform.find("button.btn").text("Send");
-		});
-		return false;
-	});
-		
 }); // end of doc ready
 	
 // run keyframe animation once page has loaded

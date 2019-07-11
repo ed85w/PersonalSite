@@ -274,20 +274,20 @@
     </div>
 
     <!-- project 1 -->
-    <div class="row project" id="project1">
+    <div class="row project align-items-center" id="project1">
       <div class="col-12 col-md-7 order-md-2">
         <a href="https://www.tinystompers.co.uk" target="_blank">
           <img src="img/project4.png" class="portfolio-img" alt="Tiny Stompers Project Image">
         </a>
       </div>  
       <div class="col-12 col-md-5 order-md-1 project-text"> 
-        <a href="https://www.tinystompers.co.uk" target="_blank"><h2 class="project-title">Tiny Stompers</h2></a>
+        <a href="https://www.tinystompers.co.uk" target="_blank"><h2 class="project-title">TINY STOMPERS</h2></a>
         <h4>Client work. A Website for a children's music and movement group. Created using Vue.js. Hosted on GitHub</h4>
       </div>        
     </div>
 
     <!-- project 2 -->
-    <div class="row project" id="project2">
+    <div class="row project align-items-center" id="project2">
       <div class="col-12 col-md-7">
         <a href="https://ed85w.github.io/Stream1Project/" target="_blank">
           <img src="img/project1.png" class="portfolio-img" alt="Reggae Band Project Image">
@@ -300,7 +300,7 @@
     </div>
 
     <!-- project 3 -->
-    <div class="row project" id="project3">
+    <div class="row project align-items-center" id="project3">
       <div class="col-12 col-md-7 order-md-2">
         <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank">
           <img src="img/project2.png" class="portfolio-img" alt="Wedding Shop Project Image">
@@ -313,7 +313,7 @@
     </div>
 
     <!-- project 4 -->
-    <div class="row project" id="project4">
+    <div class="row project align-items-center" id="project4">
       <div class="col-12 col-md-7">
         <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank">
           <img src="img/project3.png" class="portfolio-img" alt="Premier League Statistics Project Image">
@@ -335,14 +335,14 @@
         <h5>I'd love to hear from you, feel free to contact me by any of the means below</h5>
         <h5>Tel: 07967457677</h5>
 
-        <div class="col-12 col-md-6 offset-md-3 text-left contact-form">
+        <div class="col-12 col-md-6 offset-md-3 pt-4 text-left contact-form">
 
           <!-- contact form -->
-          <form id="myform">
+          <form id="myform"  method="POST" action="https://formspree.io/ed.walker@hotmail.co.uk">
 
             <div class="form-group">
-              <label for="first_name">Name</label>
-              <input type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" required/>
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Name" name="name" required/>
             </div>
 
             <div class="form-group">
@@ -390,13 +390,6 @@
   <script src="bootstrap4/popper.min.js"></script>
   <script src="bootstrap4/bootstrap.min.js"></script>
   <script src='script.js'></script>
-  <!-- emailjs scripts -->
-  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-  <script type="text/javascript">
-    (function(){
-        emailjs.init("user_lc9o3a7bk8aD9m9dyuAxG");
-    })();
-  </script>
-  <!-- end of emailjs scripts -->
+
 </body>
 </html>
