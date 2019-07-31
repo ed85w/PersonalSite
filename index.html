@@ -24,8 +24,15 @@
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Mukta+Malar" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+  <!-- css -->
   <link rel="stylesheet" type="text/css" href="style.css">
 
+  <!-- vue.js -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue"></script> -->
+
+  <!-- vue.js development version, includes helpful console warnings -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
 </head>
 <body data-spy="scroll" data-target="#main-nav" data-offset="75">
@@ -273,8 +280,40 @@
       </div>
     </div>
 
+    <div v-for="(project, index) in projects">
+
+      <template v-if="index % 2 === 0">
+        <div class="row project align-items-center" v-bind:id="'project' + (index+1)">
+            <div class="col-12 col-md-7 order-md-2">
+              <a v-bind:href="project.siteURL" target="_blank">
+                <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt">
+              </a>
+            </div>  
+            <div class="col-12 col-md-5 order-md-1 project-text"> 
+              <a v-bind:href="project.siteURL" target="_blank"><h2 class="project-title">{{project.title}}</h2></a>
+              <h4>{{project.description}}</h4>
+            </div>        
+          </div>
+      </template>
+
+
+      <template v-else>
+        <div class="row project align-items-center" v-bind:id="'project' + (index+1)">
+            <div class="col-12 col-md-7">
+              <a v-bind:href="project.siteURL" target="_blank">
+                <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt">
+              </a>
+            </div>  
+            <div class="col-12 col-md-5 project-text">
+              <a v-bind:href="project.siteURL" target="_blank"><h2 class="project-title">{{project.title}}</h2></a>
+              <h4>{{project.description}}</h4>
+            </div>        
+          </div>
+      </template>
+    </div>
+
     <!-- project 1 -->
-    <div class="row project align-items-center" id="project1">
+    <!-- <div class="row project align-items-center" id="project1">
       <div class="col-12 col-md-7 order-md-2">
         <a href="https://www.tinystompers.co.uk" target="_blank">
           <img src="img/project4.png" class="portfolio-img" alt="Tiny Stompers Project Image">
@@ -284,10 +323,10 @@
         <a href="https://www.tinystompers.co.uk" target="_blank"><h2 class="project-title">TINY STOMPERS</h2></a>
         <h4>Client work. A Website for a children's music and movement group. Created using Vue.js. Hosted on GitHub</h4>
       </div>        
-    </div>
+    </div> -->
 
     <!-- project 2 -->
-    <div class="row project align-items-center" id="project2">
+    <!-- <div class="row project align-items-center" id="project2">
       <div class="col-12 col-md-7">
         <a href="https://ed85w.github.io/Stream1Project/" target="_blank">
           <img src="img/project1.png" class="portfolio-img" alt="Reggae Band Project Image">
@@ -297,10 +336,10 @@
         <a href="https://ed85w.github.io/Stream1Project/" target="_blank"><h2>REGGAE COVER BAND</h2></a>
         <h4>A website for a fictional cover band. Created using Angular.js. Hosted on GitHub</h4>
       </div>        
-    </div>
+    </div> -->
 
     <!-- project 3 -->
-    <div class="row project align-items-center" id="project3">
+    <!-- <div class="row project align-items-center" id="project3">
       <div class="col-12 col-md-7 order-md-2">
         <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank">
           <img src="img/project2.png" class="portfolio-img" alt="Wedding Shop Project Image">
@@ -310,10 +349,10 @@
         <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank"><h2>WEDDING STATIONERY SHOP</h2></a>
         <h4>Shop application with basket and Stripe payment function. Created in Django. Hosted on Github, Heroku and AWS</h4>
       </div>
-    </div>
+    </div> -->
 
     <!-- project 4 -->
-    <div class="row project align-items-center" id="project4">
+    <!-- <div class="row project align-items-center" id="project4">
       <div class="col-12 col-md-7">
         <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank">
           <img src="img/project3.png" class="portfolio-img" alt="Premier League Statistics Project Image">
@@ -323,7 +362,7 @@
         <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank"><h2>PREMIER LEAGUE STATISTICS</h2></a>
         <h4>An interactive statistics page. Created in Flask and using D3.js, DC.js and Crossfilter. Hosted on Github and Heroku </h4>
       </div>
-    </div>
+    </div> -->
   </section>
 
   <!-- contact -->
@@ -389,6 +428,7 @@
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="bootstrap4/popper.min.js"></script>
   <script src="bootstrap4/bootstrap.min.js"></script>
+  <script src="app.js"></script>
   <script src='script.js'></script>
   <!-- google GA click tracker -->
   <script>
