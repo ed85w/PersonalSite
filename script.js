@@ -43,7 +43,7 @@ $(document).ready(function(){
 		
 		// skills grid skills 'bounce in' when skills each skills-grid div (row) is (nearly) scrolled to
 		$('.skills-grid').each(function(){
-			var skillsStartPos = $(this).position().top - 500;
+			var skillsStartPos = $(this).position().top - 600;
 			var firstTechDiv = $(this).children('div').first();
 
 			if (scrollPOS >= skillsStartPos && !firstTechDiv.hasClass('bounceInDown')){
