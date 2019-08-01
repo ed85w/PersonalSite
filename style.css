@@ -452,25 +452,6 @@ a:hover{
   color: #7f7777;
 }
 
-
-/* project background images */
-#project1 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img/paint.jpg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/paint.jpg);
-}
-#project2 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img/wood.jpeg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/wood.jpeg);
-}
-#project3 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img/flowers.jpeg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/flowers.jpeg);
-}
-#project4 {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(img/grass1.jpeg);
-  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(img/grass1.jpeg);
-}
-
 /* set up so that first 2 projects can 'zoom in' to view on scroll */
 #project1,
 #project2 { /* IE 9 */
@@ -484,15 +465,17 @@ a:hover{
   height: 550px;
   width: 100%;
   padding: 30px 20px;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  background-position: center;
-  background-size: cover;
-  -o-background-size: cover;
   position: relative;
+  overflow: hidden;
+}
+
+.project-background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
 }
 
 .project-text {

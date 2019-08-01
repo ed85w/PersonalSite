@@ -21,24 +21,24 @@ var app = new Vue ({
       },
       {
         title: 'REGGAE COVER BAND',
-        description: 'a website',
-        siteURL: 'www.vansolutions.co.uk',
-        projectImage: '',
-        backgroundImage: ''
+        description: 'A website for a fictional cover band. Created using Angular.js. Hosted on GitHub',
+        siteURL: 'https://ed85w.github.io/Stream1Project',
+        projectImage: 'img/project1.png',
+        backgroundImage: 'img/wood.jpeg'
       },
       {
         title: 'WEDDING STATIONERY SHOP',
-        description: 'a website',
-        siteURL: 'www.vansolutions.co.uk',
-        projectImage: '',
-        backgroundImage: ''
+        description: 'Shop application with basket and Stripe payment function. Created in Django. Hosted on Github, Heroku and AWS',
+        siteURL: 'https://wedding-stationery-shop.herokuapp.com',
+        projectImage: 'img/project2.png',
+        backgroundImage: 'img/flowers.jpeg'
       },
       {
         title: 'PREMIER LEAGUE STATISTICS',
-        description: 'a website',
-        siteURL: 'www.vansolutions.co.uk',
-        projectImage: '',
-        backgroundImage: ''
+        description: 'An interactive statistics page. Created in Flask and using D3.js, DC.js and Crossfilter. Hosted on Github and Heroku ',
+        siteURL: 'https://premier-league-2015-16.herokuapp.com',
+        projectImage: 'img/project3.png',
+        backgroundImage: 'img/grass1.jpeg'
       },
     ]
   },
