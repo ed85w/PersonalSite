@@ -11,14 +11,6 @@
     gtag('config', 'UA-113034349-1');
   </script>
 
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-M5739BD');</script>
-  <!-- End Google Tag Manager -->
-
   <title>Ed Walker - York Based Full Stack Web Developer</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">  
@@ -32,8 +24,15 @@
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lato|Mukta+Malar" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+
+  <!-- css -->
   <link rel="stylesheet" type="text/css" href="style.css">
 
+  <!-- vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+  <!-- vue.js development version, includes helpful console warnings
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
 
 </head>
 <body data-spy="scroll" data-target="#main-nav" data-offset="75">
@@ -131,6 +130,7 @@
     </div>
 
     <div class="row skills-grid">
+
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-php-plain devicon"></i>
@@ -166,9 +166,11 @@
           <h3>FLEXBOX</h3>
         </div>  
       </div>
+
     </div>
 
     <div class="row skills-grid">
+
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-wordpress-plain devicon"></i>
@@ -177,7 +179,37 @@
           <h3>WORDPRESS</h3>
         </div>  
       </div>
-    
+
+      <div class="col-3 tech-div">
+        <div class="col-12 text-center tech-icon-div ">
+          <i class="devicon-vuejs-plain devicon"></i>
+        </div>  
+        <div class="col-12 tech-text-div">
+          <h3>VUE.JS</h3>
+        </div>  
+      </div>
+
+      <div class="col-3 tech-div">
+        <div class="col-12 text-center tech-icon-div ">
+          <i class="devicon-angularjs-plain devicon"></i>
+        </div>  
+        <div class="col-12 tech-text-div">
+          <h3>ANGULAR.JS</h3>
+        </div>  
+      </div>
+
+      <div class="col-3 tech-div">
+        <div class="col-12 text-center tech-icon-div ">
+          <i class="devicon-django-plain devicon"></i>
+        </div>  
+        <div class="col-12 tech-text-div">
+          <h3>DJANGO</h3>
+        </div>  
+      </div>
+      
+    </div>
+
+    <div class="row skills-grid">
 
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
@@ -199,26 +231,6 @@
 
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
-          <i class="devicon-angularjs-plain devicon"></i>
-        </div>  
-        <div class="col-12 tech-text-div">
-          <h3>ANGULAR.JS</h3>
-        </div>  
-      </div>
-    </div>
-
-    <div class="row skills-grid">
-      <div class="col-3 tech-div">
-        <div class="col-12 text-center tech-icon-div ">
-          <i class="devicon-django-plain devicon"></i>
-        </div>  
-        <div class="col-12 tech-text-div">
-          <h3>DJANGO</h3>
-        </div>  
-      </div>
-
-      <div class="col-3 tech-div">
-        <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-python-plain devicon"></i>
         </div>  
         <div class="col-12 tech-text-div">
@@ -234,7 +246,11 @@
           <h3>CROSSFILTER.JS</h3>
         </div>  
       </div>
-
+      
+    </div>
+    
+    <div class="row skills-grid">
+        
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-javascript-plain devicon"></i>
@@ -243,24 +259,13 @@
           <h3>DC.JS</h3>
         </div>  
       </div>
-    </div>
-
-    <div class="row skills-grid">
+      
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-d3js-plain devicon"></i>
         </div>  
         <div class="col-12 tech-text-div">
           <h3>D3.JS</h3>
-        </div>  
-      </div>
-
-      <div class="col-3 tech-div">
-        <div class="col-12 text-center tech-icon-div ">
-          <i class="devicon-vuejs-plain devicon"></i>
-        </div>  
-        <div class="col-12 tech-text-div">
-          <h3>VUE.JS</h3>
         </div>  
       </div>
 
@@ -286,57 +291,41 @@
       </div>
     </div>
 
-    <!-- project 1 -->
-    <div class="row project align-items-center" id="project1">
-      <div class="col-12 col-md-7 order-md-2">
-        <a href="https://www.tinystompers.co.uk" target="_blank">
-          <img src="img/project4.png" class="portfolio-img" alt="Tiny Stompers Project Image">
-        </a>
-      </div>  
-      <div class="col-12 col-md-5 order-md-1 project-text"> 
-        <a href="https://www.tinystompers.co.uk" target="_blank"><h2 class="project-title">TINY STOMPERS</h2></a>
-        <h4>Client work. A Website for a children's music and movement group. Created using Vue.js. Hosted on GitHub</h4>
-      </div>        
+    <div v-for="(project, index) in projects">
+      
+      <!-- alternating layouts - first layout -->
+      <template v-if="index % 2 === 0">
+        <div class="row project align-items-center" v-bind:id="'project' + (index+1)">
+          <img class ="project-background" v-bind:src="project.backgroundImage" alt="">
+            <div class="col-12 col-md-7 order-md-2">
+              <a v-bind:href="project.siteURL" target="_blank">
+                <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt">
+              </a>
+            </div>  
+            <div class="col-12 col-md-5 pl-md-4 pr-md-4 order-md-1 project-text"> 
+              <a v-bind:href="project.siteURL" target="_blank"><h2 class="project-title">{{project.title}}</h2></a>
+              <h4>{{project.description}}</h4>
+            </div>        
+          </div>
+      </template>
+
+      <!-- alternating layouts - second layout -->
+      <template v-else>
+        <div class="row project align-items-center" v-bind:id="'project' + (index+1)">
+          <img class ="project-background" v-bind:src="project.backgroundImage" alt="">
+          <div class="col-12 col-md-7">
+            <a v-bind:href="project.siteURL" target="_blank">
+              <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt">
+            </a>
+          </div>  
+          <div class="col-12 col-md-5 pl-md-4 pr-md-4 project-text">
+            <a v-bind:href="project.siteURL" target="_blank"><h2 class="project-title">{{project.title}}</h2></a>
+            <h4>{{project.description}}</h4>
+          </div>        
+        </div>
+      </template>
     </div>
 
-    <!-- project 2 -->
-    <div class="row project align-items-center" id="project2">
-      <div class="col-12 col-md-7">
-        <a href="https://ed85w.github.io/Stream1Project/" target="_blank">
-          <img src="img/project1.png" class="portfolio-img" alt="Reggae Band Project Image">
-        </a>
-      </div>  
-      <div class="col-12 col-md-5 project-text">
-        <a href="https://ed85w.github.io/Stream1Project/" target="_blank"><h2>REGGAE COVER BAND</h2></a>
-        <h4>A website for a fictional cover band. Created using Angular.js. Hosted on GitHub</h4>
-      </div>        
-    </div>
-
-    <!-- project 3 -->
-    <div class="row project align-items-center" id="project3">
-      <div class="col-12 col-md-7 order-md-2">
-        <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank">
-          <img src="img/project2.png" class="portfolio-img" alt="Wedding Shop Project Image">
-        </a>
-      </div> 
-      <div class="col-12 col-md-5 order-md-1 project-text">        
-        <a href="https://wedding-stationery-shop.herokuapp.com/" target="_blank"><h2>WEDDING STATIONERY SHOP</h2></a>
-        <h4>Shop application with basket and Stripe payment function. Created in Django. Hosted on Github, Heroku and AWS</h4>
-      </div>
-    </div>
-
-    <!-- project 4 -->
-    <div class="row project align-items-center" id="project4">
-      <div class="col-12 col-md-7">
-        <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank">
-          <img src="img/project3.png" class="portfolio-img" alt="Premier League Statistics Project Image">
-        </a>
-      </div>
-      <div class="col-12 col-md-5 project-text">  
-        <a href="https://premier-league-2015-16.herokuapp.com/" target="_blank"><h2>PREMIER LEAGUE STATISTICS</h2></a>
-        <h4>An interactive statistics page. Created in Flask and using D3.js, DC.js and Crossfilter. Hosted on Github and Heroku </h4>
-      </div>
-    </div>
   </section>
 
   <!-- contact -->
@@ -389,23 +378,13 @@
       </div>
     </div>
   </section>
-</div>
-
-
-
-
-
-
-
 
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
   <script src="bootstrap4/popper.min.js"></script>
   <script src="bootstrap4/bootstrap.min.js"></script>
+  <script src="app.js"></script>
   <script src='script.js'></script>
-  <!-- google GA click tracker -->
-  <script>
-    ga('send', 'event', 'FormSubmit', 'submit')
-  </script>
+
 </body>
 </html>
