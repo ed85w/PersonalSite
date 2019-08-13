@@ -46,14 +46,18 @@ $(document).ready(function(){
 			var skillsStartPos = $(this).position().top - 600;
 			var firstTechDiv = $(this).children('div').first();
 
+			// if correct position has been scrolled to and the bounceInDown class hasn't already been applied
 			if (scrollPOS >= skillsStartPos && !firstTechDiv.hasClass('bounceInDown')){
+
+				// for each child of the row add bounceInDown class 
 				$(this).children('div').each(function(i){
 
+					// function to add animation to each div
 					function addKeyframe() {
 						currentDiv.addClass('bounceInDown');
 					}
 
-					// stagger each skill
+					//stagger by adding 100ms timeout delay to each child 
 					var time = i * 100;
 					var currentDiv = $(this);
 					setTimeout(addKeyframe,time);

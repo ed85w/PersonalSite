@@ -449,7 +449,7 @@ a:hover{
 }
 
 #portfolio div div h2:hover {
-  color: #7f7777;
+  color: #363434;
 }
 
 /* set up so that first 2 projects can 'zoom in' to view on scroll */
@@ -474,7 +474,7 @@ a:hover{
   left: 0;
   top: 0;
   width: 100%;
-  height: auto;
+  min-height: 100%;
   opacity: 0.5;
 }
 
@@ -486,7 +486,7 @@ a:hover{
 
 .project-text h2 {
   text-align: left;
-  padding-top: 50px;
+  padding-top: 40px;
   color: black;
 }
 

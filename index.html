@@ -125,6 +125,7 @@
     </div>
 
     <div class="row skills-grid">
+
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-php-plain devicon"></i>
@@ -160,9 +161,11 @@
           <h3>FLEXBOX</h3>
         </div>  
       </div>
+
     </div>
 
     <div class="row skills-grid">
+
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-wordpress-plain devicon"></i>
@@ -171,7 +174,37 @@
           <h3>WORDPRESS</h3>
         </div>  
       </div>
-    
+
+      <div class="col-3 tech-div">
+        <div class="col-12 text-center tech-icon-div ">
+          <i class="devicon-vuejs-plain devicon"></i>
+        </div>  
+        <div class="col-12 tech-text-div">
+          <h3>VUE.JS</h3>
+        </div>  
+      </div>
+
+      <div class="col-3 tech-div">
+        <div class="col-12 text-center tech-icon-div ">
+          <i class="devicon-angularjs-plain devicon"></i>
+        </div>  
+        <div class="col-12 tech-text-div">
+          <h3>ANGULAR.JS</h3>
+        </div>  
+      </div>
+
+      <div class="col-3 tech-div">
+        <div class="col-12 text-center tech-icon-div ">
+          <i class="devicon-django-plain devicon"></i>
+        </div>  
+        <div class="col-12 tech-text-div">
+          <h3>DJANGO</h3>
+        </div>  
+      </div>
+      
+    </div>
+
+    <div class="row skills-grid">
 
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
@@ -193,26 +226,6 @@
 
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
-          <i class="devicon-angularjs-plain devicon"></i>
-        </div>  
-        <div class="col-12 tech-text-div">
-          <h3>ANGULAR.JS</h3>
-        </div>  
-      </div>
-    </div>
-
-    <div class="row skills-grid">
-      <div class="col-3 tech-div">
-        <div class="col-12 text-center tech-icon-div ">
-          <i class="devicon-django-plain devicon"></i>
-        </div>  
-        <div class="col-12 tech-text-div">
-          <h3>DJANGO</h3>
-        </div>  
-      </div>
-
-      <div class="col-3 tech-div">
-        <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-python-plain devicon"></i>
         </div>  
         <div class="col-12 tech-text-div">
@@ -228,7 +241,11 @@
           <h3>CROSSFILTER.JS</h3>
         </div>  
       </div>
-
+      
+    </div>
+    
+    <div class="row skills-grid">
+        
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-javascript-plain devicon"></i>
@@ -237,24 +254,13 @@
           <h3>DC.JS</h3>
         </div>  
       </div>
-    </div>
-
-    <div class="row skills-grid">
+      
       <div class="col-3 tech-div">
         <div class="col-12 text-center tech-icon-div ">
           <i class="devicon-d3js-plain devicon"></i>
         </div>  
         <div class="col-12 tech-text-div">
           <h3>D3.JS</h3>
-        </div>  
-      </div>
-
-      <div class="col-3 tech-div">
-        <div class="col-12 text-center tech-icon-div ">
-          <i class="devicon-vuejs-plain devicon"></i>
-        </div>  
-        <div class="col-12 tech-text-div">
-          <h3>VUE.JS</h3>
         </div>  
       </div>
 
@@ -281,7 +287,8 @@
     </div>
 
     <div v-for="(project, index) in projects">
-
+      
+      <!-- alternating layouts - first layout -->
       <template v-if="index % 2 === 0">
         <div class="row project align-items-center" v-bind:id="'project' + (index+1)">
           <img class ="project-background" v-bind:src="project.backgroundImage" alt="">
@@ -290,14 +297,14 @@
                 <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt">
               </a>
             </div>  
-            <div class="col-12 col-md-5 order-md-1 project-text"> 
+            <div class="col-12 col-md-5 pl-md-4 pr-md-4 order-md-1 project-text"> 
               <a v-bind:href="project.siteURL" target="_blank"><h2 class="project-title">{{project.title}}</h2></a>
               <h4>{{project.description}}</h4>
             </div>        
           </div>
       </template>
 
-
+      <!-- alternating layouts - second layout -->
       <template v-else>
         <div class="row project align-items-center" v-bind:id="'project' + (index+1)">
           <img class ="project-background" v-bind:src="project.backgroundImage" alt="">
@@ -306,7 +313,7 @@
               <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt">
             </a>
           </div>  
-          <div class="col-12 col-md-5 project-text">
+          <div class="col-12 col-md-5 pl-md-4 pr-md-4 project-text">
             <a v-bind:href="project.siteURL" target="_blank"><h2 class="project-title">{{project.title}}</h2></a>
             <h4>{{project.description}}</h4>
           </div>        
@@ -381,9 +388,6 @@
   <script src="bootstrap4/bootstrap.min.js"></script>
   <script src="app.js"></script>
   <script src='script.js'></script>
-  <!-- google GA click tracker -->
-  <script>
-    ga('send', 'event', 'FormSubmit', 'submit')
-  </script>
+
 </body>
 </html>
