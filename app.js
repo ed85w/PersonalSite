@@ -10,7 +10,7 @@ var app = new Vue ({
         siteURL: 'https://www.vansolutionsltd.co.uk',
         projectImage: 'img/van-solutions.png',
         imgAlt: 'Van Solutions Project Image',
-        backgroundImage: 'img/tyre-min.jpg'
+        backgroundImage: 'img/tyre.jpg'
       },
       {
         title: 'TINY STOMPERS',
