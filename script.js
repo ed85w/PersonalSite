@@ -1,4 +1,16 @@
 $(document).ready(function(){
+
+	//lazy load images
+	
+
+
+	// run keyframe animation once page has loaded
+	window.setTimeout(function() {
+		$('#blur-line').addClass('unblur'),
+		$('.fa-arrow-alt-circle-down').addClass('slideInDown');
+	}, 100);
+
+
 	// Add smooth scrolling to all links
 	$("a").on('click', function(event) {
 
@@ -21,9 +33,15 @@ $(document).ready(function(){
 			$('html, body').animate({
 				scrollTop: $(hash).offset().top-navHeight
 			}, 800);
-
+			
 		} // End if
-
+		
+	});
+	
+	
+	// collapse navbar after selection on mob
+	$('.navbar-nav>a').on('click', function(){
+		$('.navbar-collapse').collapse('hide').delay(180);
 	});
 
 	// scrolling effects
@@ -68,20 +86,7 @@ $(document).ready(function(){
 		});
 	});
 		
-
-	// collapse navbar after selection on mob
-	$('.navbar-nav>a').on('click', function(){
-		$('.navbar-collapse').collapse('hide').delay(180);
-	});
 		
 }); // end of doc ready
 	
-// run keyframe animation once page has loaded
-$(window).on('load', function() {
-	window.setTimeout(function() {
-		$('#blur-line').addClass('unblur'),
-		$('.fa-arrow-alt-circle-down').addClass('slideInDown');
-	}, 100);
-});
-
 
