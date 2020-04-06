@@ -296,10 +296,10 @@
       <!-- alternating layouts - first layout -->
       <template v-if="index % 2 === 0">
         <div class="row project align-items-center" v-bind:id="'project' + (index+1)">
-          <img class ="project-background" v-bind:src="project.backgroundImage" alt="">
+          <img class ="project-background" v-bind:src="project.backgroundImage" alt="" loading="lazy">
             <div class="col-12 col-md-7 order-md-2">
               <a v-bind:href="project.siteURL" target="_blank">
-                <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt">
+                <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt" loading="lazy">
               </a>
             </div>  
             <div class="col-12 col-md-5 pl-md-4 pr-md-4 order-md-1 project-text"> 
@@ -312,10 +312,10 @@
       <!-- alternating layouts - second layout -->
       <template v-else>
         <div class="row project align-items-center" v-bind:id="'project' + (index+1)">
-          <img class ="project-background" v-bind:src="project.backgroundImage" alt="">
+          <img class ="project-background" v-bind:src="project.backgroundImage" alt="" loading="lazy">
           <div class="col-12 col-md-7">
             <a v-bind:href="project.siteURL" target="_blank">
-              <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt">
+              <img v-bind:src="project.projectImage" class="portfolio-img" v-bind:alt="project.imgAlt" loading="lazy">
             </a>
           </div>  
           <div class="col-12 col-md-5 pl-md-4 pr-md-4 project-text">

@@ -1,9 +1,5 @@
 $(document).ready(function(){
 
-	//lazy load images
-	
-
-
 	// run keyframe animation once page has loaded
 	window.setTimeout(function() {
 		$('#blur-line').addClass('unblur'),
