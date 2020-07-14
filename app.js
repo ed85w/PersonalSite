@@ -5,14 +5,6 @@ var app = new Vue ({
   data: {
     projects: [
       {
-        title: 'VAN SOLUTIONS',
-        description: "Website designed and built for a van servicing business in Leeds. Design was developed around the business' existing branding and logo",
-        siteURL: 'https://www.vansolutionsltd.co.uk',
-        projectImage: 'img/van-solutions.png',
-        imgAlt: 'Van Solutions Project Image',
-        backgroundImage: 'img/tyre.jpg'
-      },
-      {
         title: 'TINY STOMPERS',
         description: "Website designed and built for a children's music and movement group. Created using Vue.js. Hosted on GitHub",
         siteURL: 'https://www.tinystompers.co.uk',
@@ -29,12 +21,12 @@ var app = new Vue ({
         backgroundImage: 'img/wood.jpeg'
       },
       {
-        title: 'WEDDING STATIONERY SHOP',
-        description: 'Shop application with basket and Stripe payment function. Created in Django. Hosted on Github, Heroku and AWS',
-        siteURL: 'https://wedding-stationery-shop.herokuapp.com',
-        projectImage: 'img/project2.png',
-        imgAlt: 'wedding stationery shop project image',
-        backgroundImage: 'img/flowers.jpeg'
+        title: 'VAN SOLUTIONS',
+        description: "Website designed and built for a van servicing business in Leeds. Design was developed around the business' existing branding and logo",
+        siteURL: 'https://www.vansolutionsltd.co.uk',
+        projectImage: 'img/van-solutions.png',
+        imgAlt: 'Van Solutions Project Image',
+        backgroundImage: 'img/tyre.jpg'
       },
       {
         title: 'PREMIER LEAGUE STATISTICS',
@@ -43,6 +35,14 @@ var app = new Vue ({
         projectImage: 'img/project3.png',
         imgAlt: 'premier league statistics project image',
         backgroundImage: 'img/grass1.jpeg'
+      },
+      {
+        title: 'WEDDING STATIONERY SHOP',
+        description: 'Shop application with basket and Stripe payment function. Created in Django. Hosted on Github, Heroku and AWS',
+        siteURL: 'https://wedding-stationery-shop.herokuapp.com',
+        projectImage: 'img/project2.png',
+        imgAlt: 'wedding stationery shop project image',
+        backgroundImage: 'img/flowers.jpeg'
       },
     ]
   }
